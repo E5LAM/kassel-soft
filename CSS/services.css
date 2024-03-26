@@ -64,3 +64,68 @@
     width: 60%;
     margin: auto;
 }
+
+.section:nth-child(2) .container-service .animation-service img{
+    width: 56%;
+}
+
+.section:nth-child(3) .container-service .animation-service img{
+    width: 58%;
+    margin-top: 3.5rem;
+}
+
+.section:nth-child(4) .container-service h2{
+    font-size: 2.3rem;
+}
+
+.section:nth-child(5) .container-service .animation-service img{
+    width: 55%;
+}
+
+.section:nth-child(6) .container-service .animation-service img{
+    width: 55%;
+}
+
+.section:nth-child(7) .container-service p{
+    padding-right: 0;
+    font-size: 1.2rem;
+}
+
+.section:nth-child(7) .container-service .animation-service img{
+    width: 54%;
+    margin-top: 6rem;
+}
+
+
+.section:nth-child(8) .container-service p{
+    font-size: 1.12rem;
+    padding-right: 0;
+}
+
+.section:nth-child(8) .container-service .animation-service img{
+    width: 54%;
+    margin-top: 6rem;
+}
+
+.section:nth-child(9) .container-service p{
+    font-size: 1.12rem;
+    padding-right: 0;
+}
+
+.section:nth-child(9) .container-service .animation-service img{
+    width: 54%;
+    margin-top: 6rem;
+}
+
+
+@keyframes float{
+    0%{
+      transform: translate(0px);
+    }
+    50%{
+        transform: translateY(-7px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
