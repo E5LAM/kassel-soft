@@ -1,0 +1,66 @@
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.container-service{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 2rem ; */
+    height: 100vh;
+    align-items: center;
+}
+
+.section:nth-child(1) .container-service{
+    height: 80vh;
+}
+.container-service .content-service{
+    width: 40%;
+    padding: 3rem 4rem;
+    height: 60vh;
+}
+
+.container-service .content-service h2{
+    font-size: 2.8rem ;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+.container-service .content-service .description{
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.container-service .content-service .description p{
+    font-size: 1.4rem;
+    word-spacing: .15rem;
+    line-height: 1.6rem;
+}
+
+
+.container-service .animation-service{
+    width: 50%;
+    position: relative;
+    padding: 1rem ;
+    justify-content: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container-service .animation-service .animation-img{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.container-service .animation-service img{
+    filter: var(--filter-blue);
+    width: 60%;
+    margin: auto;
+}

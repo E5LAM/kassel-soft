@@ -1,0 +1,112 @@
+
+/* .section .container {
+    display: flex ;
+    justify-content: space-evenly;
+    align-items: start;
+} */
+
+.container{
+    margin: 4rem auto auto -3rem !important;
+    width: 100%;
+    padding: 2rem !important;
+}
+
+.container .img{
+    height: fit-content;
+    width: fit-content;
+}
+
+.container .img img {
+    filter: var(--filter-blue);
+    width: 30vw;
+}
+
+.section:nth-child(2) .container{
+    align-items:center;
+    display: flex;
+}
+
+.container .ceo-box{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    row-gap: 4rem;
+    margin-left: -1rem;
+
+}
+
+.container .ceo-box .ceo-item{
+    padding: 1rem ;
+    border-radius: 1rem ;
+    border: 2px solid var(--blue-black);
+    text-align: center;
+    
+
+}
+
+.container .ceo-box .ceo-item .name{
+    margin-bottom: 1rem;
+}
+
+.container .ceo-box .ceo-item h4{
+    display: inline;
+}
+
+.successfully-products{
+    margin-bottom: 1rem;
+}
+.successfully-products .heading{
+    margin-top: .7rem;
+}
+
+.successfully-products .heading h1 span{
+    font-size: 3.3rem;
+}
+
+.successfully-products .heading h1{
+    margin-bottom: .25rem ;
+}
+
+.successfully-products .heading h2 span{
+    font-size: 2.3rem;
+}
+
+.successfully-products .container-product{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.container-product .product-box{
+    border: 2px solid var(--blue-black);
+    border-radius: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem ;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.container-product .product-box img{
+    filter: var(--filter-blue);
+    width: 4rem;
+    margin: auto;
+    margin-bottom: .5rem;
+
+}
+
+
+.container-product .product-box h3,
+.container-product .product-box h3 span{
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
