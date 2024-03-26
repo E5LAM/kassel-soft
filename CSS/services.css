@@ -63,7 +63,100 @@
     filter: var(--filter-blue);
     width: 60%;
     margin: auto;
+    transition: all 2s ease-in-out;
+    animation: service-float 2s ease-in-out infinite normal ;
 }
+
+@keyframes service-float{
+    0%{
+      transform: translate(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+        
+.container-service .animation-service .jet{
+    right: 5%;
+    top: calc(100% - 2px);
+}
+
+.container-service .animation-service .jet::before,
+.container-service .animation-service .jet::after,
+.container-service .animation-service .jet span{
+    animation: moveSmoke 2.2s infinite;
+    height: 200px;
+    top: -430px;
+    width: 40px;
+    left: 80%;
+}
+
+.section:nth-child(2) .container-service .animation-service .jet::before,
+.section:nth-child(2) .container-service .animation-service .jet::after,
+.section:nth-child(32) .container-service .animation-service .jet span{
+
+    left: 20px;
+}
+
+.section:nth-child(3) .container-service .animation-service .jet::before,
+.section:nth-child(3) .container-service .animation-service .jet::after,
+.section:nth-child(3) .container-service .animation-service .jet span{
+
+    top: -395px;
+    left: 80%;
+}
+
+.section:nth-child(4) .container-service .animation-service .jet::before,
+.section:nth-child(4) .container-service .animation-service .jet::after,
+.section:nth-child(4) .container-service .animation-service .jet span{
+
+    left:130%;
+}
+
+.section:nth-child(5) .container-service .animation-service .jet::before,
+.section:nth-child(5) .container-service .animation-service .jet::after,
+.section:nth-child(5) .container-service .animation-service .jet span{
+    top: -415px;
+}
+
+.section:nth-child(6) .container-service .animation-service .jet::before,
+.section:nth-child(6) .container-service .animation-service .jet::after,
+.section:nth-child(6) .container-service .animation-service .jet span{
+    top: -410px;
+    left: 20px;
+}
+
+.section:nth-child(7) .container-service .animation-service .jet::before,
+.section:nth-child(7) .container-service .animation-service .jet::after,
+.section:nth-child(7) .container-service .animation-service .jet span{
+    top: -404px;
+    left: -30px;
+}
+
+.section:nth-child(8) .container-service .animation-service .jet::before,
+.section:nth-child(8) .container-service .animation-service .jet::after,
+.section:nth-child(8) .container-service .animation-service .jet span{
+    top: -408px;
+    left: -30px;
+}
+
+.section:nth-child(9) .container-service .animation-service .jet::before,
+.section:nth-child(9) .container-service .animation-service .jet::after,
+.section:nth-child(9) .container-service .animation-service .jet span{
+    top: -406px;
+    left: -30px;
+}
+
+.container-service .animation-service .jet::after {
+    animation-delay: 1.1s;
+  }
+  
+ .container-service .animation-service  .jet span {
+    animation-delay: .2s;
+  }
 
 .section:nth-child(2) .container-service .animation-service img{
     width: 56%;
@@ -77,6 +170,9 @@
 .section:nth-child(4) .container-service h2{
     font-size: 2.3rem;
 }
+.section:nth-child(4) .container-service img{
+    margin-top: 1.5rem;
+}
 
 .section:nth-child(5) .container-service .animation-service img{
     width: 55%;
@@ -84,6 +180,7 @@
 
 .section:nth-child(6) .container-service .animation-service img{
     width: 55%;
+    margin-top: 2rem;
 }
 
 .section:nth-child(7) .container-service p{
@@ -118,14 +215,3 @@
 }
 
 
-@keyframes float{
-    0%{
-      transform: translate(0px);
-    }
-    50%{
-        transform: translateY(-7px);
-    }
-    100%{
-        transform: translate(0);
-    }
-}
