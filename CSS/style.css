@@ -1134,15 +1134,17 @@ h1 span {
                 /* FOOOTER */
 
 .footer{
-    background-color: rgb(37, 37, 37);
-    height: 40vh;
+    background-color: rgb(0, 0, 29);
+    height: 65vh;
     padding: auto 20rem;
+    padding-top: 3rem;
 }
 
 .footer .container-footer{
     width: 100%;
     display: flex;
     height: 100%;
+
 }
 
 .footer .container-footer .contact-section{
@@ -1150,15 +1152,17 @@ h1 span {
     height: 100%;
     justify-content: center;
     align-items: center;
-    width: 35%;
-    padding: .5rem 1.5rem;
+    width: 30%;
+    padding: 0rem 1.5rem;
 }
 
-.container-footer .contact-section .contact-item{
+.container-footer .contact-section .contact-item,
+.footer .location-section .location-item{
     display: flex;
     flex-direction: row;
     gap: .5rem;
-    /* flex-wrap: wrap; */
+    text-transform: capitalize;
+    align-items: center;
 }
 
 .footer .name a{
@@ -1169,26 +1173,51 @@ h1 span {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold; 
-    /* filter: drop-shadow( 0rem 1rem 1rem rgb(231, 231, 231)); */
 }
+
+
 
 .footer .name{
     width: fit-content;
     height: fit-content;
 }
 
-.contact-section .contact-item i{
+/* .contact-section .contact-item i{
     display: inline;
     font-size: 1.2rem ;
     color: var(--blue);
-}
+} */
+
 
 .contact-section .contact-item p{
     color: whitesmoke;
 }
+.contact-section .contact-item h4{
+    color: whitesmoke;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-section .contact-item input{
+    border-radius: 2rem;
+    padding: 8px 13px;
+    border: 3px solid var(--blue);
+    background-color: inherit;
+    outline: none;
+    color: var(--blue);
+    font-size: 1rem;
+    width: 50%;
+}
+
+.contact-section .contact-item input::placeholder{
+    color: var(--blue);
+}
 
 .contact-section .contact-item:nth-last-child(1){
     margin: .5rem 0rem 1rem;
+}
+.contact-section .contact-item:nth-last-child(3){
+    margin-bottom: 3rem;
 }
 
 .contact-section .contact-item .iconDiv{
@@ -1290,28 +1319,74 @@ h1 span {
 }
 
 .footer .nav-section {
-    width: 30%;
+    width: 25%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+    
+}
+
+.footer .location-section{
+    width: 25%;
+    margin-left: 2rem;
+
+}
+
+.footer .location-section .location-item{
+    margin-bottom: 2rem;
+}
+.footer .nav-section .nav-heading,
+.footer .support-section .support-heading,
+.footer .location-section .location-heading{
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.footer .location-section .location-heading{
+    text-align: left;
+    width: 100%;
+}
+
+.footer .support-section,
+.footer .location-section{
+    margin-top: 1.5rem;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 
 }
 
-.footer .nav-section .nav-link{
-    width: max-content;
-    margin-bottom: .5rem;
+.footer .nav-section .nav-heading h3,
+.footer .support-section .support-heading h3,
+.footer .location-section .location-heading h3{
+    font-size: 2rem;
 }
 
-.footer .nav-section .nav-link a{
+.footer .nav-section .nav-link,
+.footer .support-section .support-link{
+    width: max-content;
+    margin-bottom: .35rem;
+    text-align: left;
+}
+
+.footer .nav-section .nav-link a,
+.footer .support-section .support-link a{
     text-decoration: none ;
     font-size: 1.2rem;
     text-transform: capitalize;
     font-weight: bold;
     color: var(--blue);
     position: relative;
+    text-align:left;
 }
-.footer .nav-section .nav-link a::before {
+
+.footer .support-section .support-link {
+    margin-bottom: 1.5rem;
+}
+.footer .nav-section .nav-link a::before,
+.footer .support-section .support-link a::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -1325,9 +1400,30 @@ h1 span {
     border-radius: 2rem;
   }
   
-.footer .nav-section .nav-link a:hover::before {
+.footer .nav-section .nav-link a:hover::before ,
+.footer .support-section .support-link a:hover::before{
     transform: translate(-50%, 0) scaleX(1);
   }
+
+.footer .location-section .location-item {
+    display: flex;
+    flex-direction: row;
+    
+
+} 
+
+.footer .location-section .location-item{
+    text-transform: none;
+    text-align: left;
+    width: fit-content;
+}
+
+.footer .location-section .location-item i{
+    height: fit-content;
+    font-size: 1.2rem;
+}
+
+
 ::-webkit-scrollbar{
     width: 10px ;
     background-color: var(--bg-color);

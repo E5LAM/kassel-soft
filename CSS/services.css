@@ -96,7 +96,7 @@
 
 .section:nth-child(2) .container-service .animation-service .jet::before,
 .section:nth-child(2) .container-service .animation-service .jet::after,
-.section:nth-child(32) .container-service .animation-service .jet span{
+.section:nth-child(2) .container-service .animation-service .jet span{
 
     left: 20px;
 }
