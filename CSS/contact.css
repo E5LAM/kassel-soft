@@ -34,7 +34,9 @@
     border-radius: .5rem;
 }
 
-
+.field.error .item{
+    border-color:#e00000 ;
+}
 
 .contact textarea{
     width: 100%;
@@ -71,7 +73,7 @@
 }
 
 .contact .error-txt{
-    color: rgb(224, 0, 0);
+    color: #e00000;
     font-size: .8rem;
     text-align: left;
     margin: 3px 0px 10px 3px;
