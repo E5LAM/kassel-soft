@@ -20,7 +20,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom:1rem;
 }
 
 .contact .input-box .item{
@@ -44,6 +44,7 @@
     padding: 1rem;
     border: 2px solid var(--blue);
     color: whitesmoke;
+    margin-bottom: .3rem;
 }
 
 .contact textarea::placeholder{
@@ -59,7 +60,21 @@
     border-radius: .5rem;
     box-shadow: 0 0 .7rem var(--blue);
     width: max-content;
-    margin: 1.5rem auto;
+    margin: 0rem auto 0rem auto;
     font-size: 1.2rem ;
     font-weight: bold;
+    transition: all .3s ease-in-out;
 }
+.contact form button:hover{
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.contact .error-txt{
+    color: rgb(224, 0, 0);
+    font-size: .8rem;
+    text-align: left;
+    margin: 3px 0px 10px 3px;
+    display: none;
+}
+

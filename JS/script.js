@@ -41,3 +41,28 @@ cards.forEach(card => {
   card.addEventListener('mouseenter', hoverRotate);
   card.addEventListener('mouseleave', hoverOutRotate);
 });
+
+
+      //  CONTACT US (SEND EMAIL) //
+
+const form = document.querySelector("form");
+
+function sendEmail(){
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "kasselsoft@kasselsoft.com",
+    Password : "DAE2079B061C00C7C71ED4C65ABF5D0A2467",
+    To : 'kasselsoft@kasselsoft.com',
+    From : "kasselsoft@kasselsoft.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+  }).then(
+    message => alert(message)
+  );
+}
+
+form.addEventListener("submit", (e) =>{
+  e.preventDefault();
+
+  sendEmail();
+})

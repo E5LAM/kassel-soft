@@ -69,11 +69,18 @@
                     <div class="input-field field">
                         <input type="text" placeholder="Full Name" id="name"
                         class="item" autocomplete="off">
+                        <div class="error-txt">
+                            Full Name can't be blank
+                        </div>
                     </div>
+                    
 
                     <div class="input-field field">
                         <input type="text" placeholder="E-mail" id="email"
                         class="item" autocomplete="off">
+                        <div class="error-txt">
+                            E-mail Address can't be blank
+                        </div>
                     </div>
 
                 </div>
@@ -83,11 +90,17 @@
                     <div class="input-field field">
                         <input type="text" placeholder="Phone Number" id="phone"
                         class="item" autocomplete="off">
+                        <div class="error-txt">
+                            Phone Number can't be blank
+                        </div>
                     </div>
 
                     <div class="input-field field">
                         <input type="text" placeholder="Subject" id="subject"
                         class="item" autocomplete="off">
+                        <div class="error-txt">
+                            Subject can't be blank
+                        </div>
                     </div>
 
                 </div>
@@ -95,6 +108,9 @@
                 <div class="textarea-field field">
                     <textarea name="" id="message" cols="30" rows="10"
                     placeholder="Your  Message" class="item" autocomplete="off"></textarea>
+                    <div class="error-txt">
+                        Message can't be blank
+                    </div>
                 </div>
 
                 <button type="submit" >Send  Message</button>
@@ -106,6 +122,7 @@
 
     <div class="cursor"></div>
     <div class="cursor2"></div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="JS/script.js"></script>
 </body>
 </html>
