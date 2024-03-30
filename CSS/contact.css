@@ -7,16 +7,21 @@
     margin: 2rem auto;
 }
 
+.section:nth-child(1){
+    height: max-content;
+}
 .container-contact{
-    width: 100%;
+    width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: start;
     padding: 0rem 1.5rem;
+    margin: 1rem auto;
+    flex-direction: column-reverse;
 }
 
 .container-contact .contact {
-    width: 50%;
+    width: 100%;
 
 }
 
@@ -32,8 +37,11 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom:1rem;
+    flex-direction: column;
+}
+
+.contact .input-box .input-field{
+    width: 100%;
 }
 
 .contact .input-box .item{
@@ -45,6 +53,7 @@
     width: 100%;
     background-color: transparent;
     border-radius: .5rem;
+    margin-bottom: 1rem;
 }
 
 .field.error .item{
@@ -105,30 +114,37 @@
             /* INFO */
 
 .container-contact .contact-info{
-    width: 40%;
-    border: 2px solid var(--blue-black);
+    width: 100%;
     border-radius: 1rem;
-    background-color: var(--blue-black);
     text-align: center;
-
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
 }
 
-.container-contact .contact-info .heading{
-    text-transform: capitalize;
-    color: whitesmoke;
-    font-size: 1.9rem;
+.contact-info .info{
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
-
 .container-contact .contact-info .info-item{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: max-content;
     height: fit-content;
     align-items: center;
     margin-bottom: 1rem;
     margin-left: 1rem;
+    text-align: center;
 }
 
+.container-contact .contact-info .info-item h4{
+    color: var(--blue);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: .5rem auto;
+}
 .contact-info .info-item i{
  padding: .9rem 1rem ;
  border-radius: 50%;
@@ -141,7 +157,7 @@ margin: auto 0px;
 }
 
 .contact-info .info-item p{
-    font-size: 1.4rem ;
+    font-size: 1rem ;
     font-weight: bold;
     margin-left: .5rem;
     color: whitesmoke;
@@ -150,13 +166,20 @@ margin: auto 0px;
 .section:nth-child(2){
     height: fit-content;
 }
+
+.section:nth-child(2) a{
+    width: fit-content;
+}
  .map{
     width: 70%;
     padding: 0;
     margin: 2rem auto;
+    cursor: pointer;
 
 }
  .map iframe{
     width: 100%;
     border-radius: 2rem;
+    background-color: black;
+    cursor: pointer;
 }
