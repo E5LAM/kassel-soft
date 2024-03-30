@@ -193,6 +193,7 @@ margin: auto 0px;
     background-color: black;
     cursor: pointer;
     height: 100%;
+    filter:invert(90%);
 }
 
 .box span{
