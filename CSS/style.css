@@ -269,9 +269,9 @@ h1 span {
 }
 
 .container .content p{
-    line-height: 2rem ;
-    padding-right: 3.5rem;
-    font-size: 1.2rem ;
+    line-height: 1.5rem ;
+    padding-right: 3rem;
+    font-size: 1rem ;
     color:var(--text-color) ;
 }
 

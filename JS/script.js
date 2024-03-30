@@ -58,9 +58,7 @@ function sendEmail(){
   Message: ${message.value} `;
 
   Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "kasselsoft@kasselsoft.com",
-    Password : "BF446770BDF25335CCE4B9CDC25BC9CE79D3",
+    SecureToken : "b4f57967-11c5-4cf6-825a-09d39b72db2b",
     To : 'kasselsoft@kasselsoft.com',
     From : "kasselsoft@kasselsoft.com",
     Subject : subject.value,
@@ -79,7 +77,8 @@ function sendEmail(){
 }
 
 function checkInputs(){
-  const items = querySelectorAll(".item")
+  const items = document.querySelectorAll('.item')
+
   for(const item of  items ){
     if(item.value == ""){
       item.classList.add("error");
@@ -98,7 +97,17 @@ function checkInputs(){
   }
 }
 
+
 form.addEventListener("submit", (e) =>{
   e.preventDefault();
-  sendEmail();
+  checkInputs();
+
+  if(!fullName.classList.contains("error") && !email.classList.contains("error") &&
+  !phone.classList.contains("error") && !subject.classList.contains("error")&&
+  !message.classList.contains("error")  ){
+    sendEmail();
+    // console.log("ok");
+    form.reset();
+    return false;
+  }
 })
