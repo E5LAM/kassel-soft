@@ -170,16 +170,36 @@ margin: auto 0px;
 .section:nth-child(2) a{
     width: fit-content;
 }
- .map{
+ .box{
     width: 70%;
     padding: 0;
     margin: 2rem auto;
     cursor: pointer;
+    height: 26rem;
+    display: flex;
+    position: relative;
+}
 
+.map{
+    display: inline;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
  .map iframe{
     width: 100%;
     border-radius: 2rem;
     background-color: black;
     cursor: pointer;
+    height: 100%;
+}
+
+.box span{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: inline;
+    position: absolute;
 }
