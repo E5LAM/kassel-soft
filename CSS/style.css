@@ -21,6 +21,7 @@
     --filter-blue: invert(88%) sepia(27%) saturate(7319%) hue-rotate(129deg) brightness(101%) contrast(98%);
     --filter-blue-black: invert(21%) sepia(14%) saturate(1839%) hue-rotate(172deg) brightness(92%) contrast(92%);
     --primary-bg:linear-gradient(#eee 15% , rgb(30, 30, 30) 40% , var(--blue) 170%);
+
 }
 
 .cursor{
@@ -82,6 +83,10 @@ body {
 	font-family:  sans-serif;
     
 }
+
+/* .section:nth-child(2){
+    background: linear-gradient(#EEEEEE, #222831) ;
+} */
 
 .section{
     height: 100vh;
@@ -253,6 +258,7 @@ h1 span {
     background: linear-gradient(#eee,#333 , var(--blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* color: #222831; */
     font-size: 4rem ;
     font-weight: bold;
 }
@@ -261,6 +267,7 @@ h1 span {
     background: linear-gradient(#eee,#333 , var(--blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* color: #222831; */
 }
 
 .container .content h2 {
@@ -874,6 +881,7 @@ h1 span {
 .services-section .service-box{
     width: max-content;
     border: 3px solid var(--blue-black);
+    /* border: 3px solid #31363F; */
     border-radius: 1rem;
     display: flex;
     align-items: center;
@@ -884,6 +892,7 @@ h1 span {
     flex-direction: column;
     height: max-content;
     background-color: black;
+    /* background-color: #76ABAE; */
     position: relative;
     overflow: hidden;
     height: 60%;
@@ -893,6 +902,7 @@ h1 span {
 
 .services-section .service-box .img-section img{
    filter: var(--filter-blue);
+
    width: 4.8rem;
     display: block;
     margin: .5rem auto;
