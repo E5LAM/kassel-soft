@@ -926,8 +926,20 @@ h1 span {
     text-align: center;
 }
 
-.why-us .heading h1{
-    font-size: 3rem ;
+.why-us .heading h1 span{
+    font-size: 2.5rem ;
+}
+
+.why-us .heading h1 span:nth-last-child(1){
+    display: block;
+}
+
+.why-us .heading h5{
+    color: var(--blue);
+    font-size: 1.2rem ;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+    margin-top: -1.5rem;
 }
 
 .why-us .container .content {
@@ -945,20 +957,33 @@ h1 span {
     padding-right: 5rem;
 }
 
+.why-us .why-us-container {
+    width: 100%;
+    padding: 1rem ;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    padding-right: 5rem;
+}
 .item-box{
-    width: 70%;
+    width: 100%;
     display: flex;
     align-items: center;
     height: max-content;
     flex-wrap: wrap;
-    margin-top: -2.7rem;
+    gap: 2rem 1.5rem;
+    justify-content: space-evenly;
+    margin: .5rem auto;
+    margin-right: 1rem;
     
 }
 
 .item-box .box{
 
     padding: .5rem .7rem 1.8rem ;
-    margin: 1rem auto ;
+    margin: 0rem 1.5rem ;
     width: max-content;
     height: max-content;
     display: grid;
@@ -1020,7 +1045,8 @@ h1 span {
 }
 
 .item-box .box .description{
-    width: 12em;
+    width: 12rem;
+    margin-top: .8rem;
 }
 
                 /* PRODUCT DEV SECTION */
