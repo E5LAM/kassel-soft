@@ -1983,6 +1983,10 @@ h1 span {
 }
 
 @media screen and (max-width: 450px){
+    .section{
+        width: 100vw;
+        overflow-x: hidden;
+    }
     .navbar{
         width: 100vw;
     }
@@ -2054,6 +2058,9 @@ h1 span {
 
     .experience .heading h1 span {
         font-size: 1.8rem;
+    }
+    .footer .contact-section .contact-item{
+        width: 50%;
     }
 
 }
