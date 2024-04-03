@@ -2062,5 +2062,8 @@ h1 span {
     .footer .contact-section .contact-item{
         width: 50%;
     }
+    .footer {
+        display: none;
+    }
 
 }
