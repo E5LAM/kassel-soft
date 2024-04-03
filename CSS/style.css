@@ -112,6 +112,12 @@ nav,
     box-sizing:content-box;
 }
 
+.nav-icon{
+    font-size: 2.5rem;
+    color: var(--blue);
+    cursor: pointer;
+    display: none;
+}
 .navbar .nav-logo a {
     text-transform: uppercase;
     text-decoration: none;
@@ -122,7 +128,6 @@ nav,
     font-weight: bold; 
     filter: drop-shadow( 0rem 1rem 1rem rgb(231, 231, 231));
 }
-
 
  
 .navbar .nav-logo{
@@ -152,6 +157,18 @@ nav , select  , option {
     width: fit-content;
 }
 
+.nav-toggle{
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+#close-icon{
+    display: none;
+    font-size: 2rem;
+}
 .nav-item , select , option {
 	font-size: 0.8999rem;
 	line-height: 1rem;
@@ -853,7 +870,7 @@ h1 span {
     }
 
 }
-                /* SERVICES SECTION */
+                /* SERVICES SECTION  2*/
 
 .services-section {
     display: grid;
@@ -1543,6 +1560,430 @@ h1 span {
 
 
                 /*  Responsive */
-@media screen and (max-width: 984px){
+@media screen and (max-width: 1200px){
+
+                /*   SECTION 1  */
+    .section{
+        height: max-content;
+    }
+    .section:nth-child(1) .container{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-left: 1rem;
+        margin-top: 3rem;
+        padding-bottom: 0rem;
+    }
+    .section:nth-child(1) .container .content {
+        width: 100%;
+    }
+    .section:nth-child(1) .container .content p{
+        width: 85%;
+    }
     
+    .section:nth-child(1) .container .animation{
+        margin-bottom: 8rem;
+    }
+
+    .section:nth-child(1) h1 span{
+        font-size: 1.4em;
+    }
+
+            /* SECTION 2 */
+
+    
+    .section:nth-child(2) .services-section{
+        display: flex;
+        height: max-content;
+        margin-top: 2rem;
+    }
+    .section:nth-child(2) h1 span{
+        font-size: 2.8rem;
+    }
+
+            /* SECTION 4 */
+    .work .work-container{
+        padding-right: 3rem ;
+        flex-wrap:wrap ;
+    }
+    .work .work-container .box{
+        margin: 0rem 1rem;
+    }
+
+            /*  SECTION 5 */
+    .section:nth-child(5){
+        height: max-content;
+        padding-bottom: 3.5rem;
+    }
+
+    .footer .contact-section{
+        margin-left: 1.5rem;
+    }
+
+    .footer .contact-section .contact-item h4{
+        width: 6rem;
+        font-size: 1.2rem;
+        margin-right: .5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 850px){
+         /*   SECTION 1 */
+
+    .section:nth-child(1) .primary-btn{
+        padding: 1rem 1.5rem;
+    }
+    .section:nth-child(1) .primary-btn a{
+       font-size: 1.2rem;
+    }
+
+            /* SECTION 2 */
+    
+    .section:nth-child(2) .heading span{
+        font-size: 2.3rem;
+    }
+
+    .services-section .service-box  .hedding-section h2 span{
+        font-size: 1.5rem;
+    }
+
+            /*    SECTION 5   */
+    
+    .work .heading{
+        text-align: center;
+        width: 100%;
+    }
+    .work .heading h4{
+        padding: 0 2rem ;
+    }
+    .work .work-container .box   span{
+        font-size: 1.5rem;
+    }
+
+    .experience .heading {
+        margin-bottom: .7rem;
+    }
+    .experience .heading h1 span{
+        font-size: 2.2rem;
+    }
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        height: max-content;
+    }
+
+    .footer .container-footer{
+        flex-wrap: wrap;
+        padding-left: 3rem ;
+        grid-area: 2rem;
+        justify-content: space-around;
+    }
+    .footer .container-footer .contact-section,
+    .footer .container-footer .location-section,
+    .footer .container-footer .nav-section,
+    .footer .container-footer .support-section{
+        margin: .7rem 2rem;
+    }
+    .footer .container-footer .nav-section .nav-heading{
+        margin-top: .7rem;
+    }
+}
+
+
+@media screen and (max-width:768px){
+        /* SECTION 1 */
+
+    .navbar {
+        justify-content: start;
+        position: relative;
+    }
+
+    .navbar .animation-box{
+        position: absolute;
+        left: 7%;
+        z-index: 1001;
+    }
+    .navbar .nav-icon{
+        position: absolute;
+        left: 88%;
+        z-index: 1001;
+    }
+    .navbar .language-button{
+        position: absolute;
+        left: 68%;
+        top: 100%;
+    }
+    .navbar nav{
+        display: none;
+    }
+    .nav-toggle{
+        position: absolute;
+        top: -70%;
+        left: 0;
+        width: 100%;
+        height: 20rem ;
+        background: transparent;
+        backdrop-filter: blur(50px) ;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transition: all .5s ease-in-out;
+        padding-top: 3rem;
+        box-shadow: 0 .5rem 1rem black;
+    }
+
+    
+
+    .nav-toggle a{
+        text-decoration: none;
+        color: var(--blue);
+        font-size: 1.5rem ;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .navbar .nav-icon{
+        display: inline-block;
+    }
+
+    .section:nth-child(1) .container .animation {
+        width: 100px ;
+        height: 100px;
+        margin-top: 2.5rem;
+    }
+
+    .container .animation span h2{
+        top: 100%;
+        font-size: 1.5rem;
+        left: -23%;
+    }
+
+    .section:nth-child(1) .container .content{
+        margin-top: -1.5rem ;
+        
+    }
+    .section:nth-child(1) .container .content h1 span{
+        font-size: 2.3rem;
+
+    }
+    .section:nth-child(1) .container .content h2{
+        font-size: 1.5rem;
+
+    }
+    .section:nth-child(1) .container .content p{
+        font-size: 1rem;
+        line-height: normal;
+    }
+    .section:nth-child(1) .container .content .primary-btn{
+        margin: 1rem;
+    }
+    .work .work-container .box{
+        width: 35%;
+    }
+    .work .work-container .box h2 span{
+        font-size: 1.4rem;
+    }
+    .work .work-container .box .description{
+        font-size: .9rem;
+    }
+
+    
+    .footer .container-footer .location-section {
+        margin-right: 5rem;
+    }
+    .footer .container-footer .location-section .location-item{
+        width: 110%;
+    }
+    .footer .location-section .location-heading h3{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width:650px){
+    .section:nth-child(1) .container .content h1 span{
+        font-size: 2rem;
+
+    }
+    .section:nth-child(1) .container .animation {
+        width: 100px ;
+        height: 100px;
+        margin-top: 2.5rem;
+    }
+    .container .animation span{
+        transform: rotateY(calc(var(--i) * 52deg)) translateZ(180px);
+    }
+
+    .container .animation span h2{
+        top: 100%;
+        font-size: 1.rem;
+        left: -23%;
+    }
+
+    .container .content{
+        margin-left: -2rem;
+    }
+
+    .navbar .language-button select{
+        padding: .35rem .5rem;
+        font-size: .85rem;
+        margin-top: .5rem;
+    }
+
+
+    .section:nth-child(2) .heading h1 span{
+        font-size: 2rem ;
+    }
+    .services-section .service-box{
+        width: 40%;
+        padding: .25rem .7rem;
+        text-align: center;
+        justify-content: center;
+    }
+    .services-section .service-box .img-section img{
+        width: 30%;
+    }
+    .services-section .hedding-section{
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section:nth-child(3) .heading h5{
+        font-size: 1rem;
+    }
+    .section:nth-child(3) .heading h1 span{
+        font-size: 2rem;
+    }
+
+    
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 576px){
+    
+    .section:nth-child(1) .container .content h1 span{
+        font-size: 2rem;
+
+    }
+    .section:nth-child(1) .container .animation {
+        width: 100px ;
+        height: 100px;
+        margin-top: 2.5rem;
+        left: -10%;
+    }
+    .container .animation span{
+        transform: rotateY(calc(var(--i) * 52deg)) translateZ(180px);
+    }
+
+    .container .animation span h2{
+        top: 100%;
+        font-size: 1.rem;
+        left: -23%;
+    }
+
+    .container .content{
+        margin-left: -2rem;
+    }
+    .section:nth-child(1) .container .content{
+        margin-top: -2.5rem ;
+        
+    }
+
+    .services:nth-child(2) .heading h1 span{
+        font-size: 1px ;
+    }
+    .services-section .service-box{
+        width: 40%;
+        padding: .25rem .7rem;
+        text-align: center;
+        justify-content: center;
+    }
+    .services-section .service-box .img-section img{
+        width: 30%;
+    }
+    .services-section .hedding-section{
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .work .work-container .box{
+        width: 55%;
+    }
+
+    .experience .heading h1 span{
+        font-size: 2rem;
+    }
+
+    .footer .container-footer .contact-section .name a{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .footer .container-footer .contact-section .contact-item p{
+        font-size: .8rem;
+        width: 80%;
+    }
+    .footer .container-footer .contact-section .contact-item p{
+        font-size: .8rem;
+        width: 80%;
+    }
+    .footer .container-footer .contact-section .contact-item .iconDiv{
+        width: 12px ;
+        height: 14px;
+        padding: .8rem .7rem;
+    }
+
+    .footer .container-footer .nav-section .nav-heading h3{
+        font-size: 1.8rem;
+    }
+    .footer .container-footer .nav-section .nav-heading h3{
+        font-size: 1.8rem;
+    }
+    .footer .container-footer .location-section {
+        margin-right: 7rem;
+    }
+
+    .section:nth-child(1) .primary-btn{
+        margin-top: 1rem;
+    }
+    .section:nth-child(1) .primary-btn a{
+       font-size: 1.2rem;
+    }
+    .section:nth-child(1) h1 {
+        width: 80%;
+    }
+    .section:nth-child(1) .container .content h2 {
+        font-size: 1.35rem;
+    }
+
+    .item-box .box{
+        margin: 0rem .5rem;
+    }
+
+    .footer .support-section,
+.footer .location-section{
+    width: max-content;
+    border: 1px solid red;
+    margin: 0 0;
+}
+
+
+    .footer .container-footer .location-section{
+        margin-left: 2rem;
+ 
+    }
+}
+
+@media screen and (max-width: 425px){
+   
+
 }

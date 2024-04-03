@@ -111,3 +111,23 @@ form.addEventListener("submit", (e) =>{
     return false;
   }
 })
+
+      // NAV ICON
+function hideSlider(){
+  const menuIcon = document.querySelector("#menu-icon");
+  menuIcon.style.display = 'none';
+  const closeIcon = document.querySelector("#close-icon");
+  closeIcon.style.display = 'flex';
+
+  const navToggle = document.querySelector(".nav-toggle");
+  navToggle.style.top = '0%';
+}
+
+function showSlider(){
+  const menuIcon = document.querySelector("#menu-icon");
+  menuIcon.style.display = 'flex';
+  const closeIcon = document.querySelector("#close-icon");
+  closeIcon.style.display = 'none';
+  const navToggle = document.querySelector(".nav-toggle");
+  navToggle.style.top = '-70%';
+}
