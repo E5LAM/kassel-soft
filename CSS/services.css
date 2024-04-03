@@ -17,8 +17,8 @@
 }
 .container-service .content-service{
     width: 40%;
-    padding: 3rem 4rem;
-    height: 60vh;
+    padding: 1rem 4rem;
+    height: fit-content;
 }
 
 .container-service .content-service h2{
@@ -35,9 +35,10 @@
 }
 
 .container-service .content-service .description p{
-    font-size: 1.4rem;
+    font-size: 1.4em;
     word-spacing: .15rem;
     line-height: 1.6rem;
+
 }
 
 
@@ -53,15 +54,16 @@
 }
 
 .container-service .animation-service .animation-img{
-    width: fit-content;
+    height: fit-content;
     margin: auto;
-    display: flex;
     justify-content: center;
-    position: relative;
+    position: absolute;
+    width: 40%;
+    top: 17%;
 }
 .container-service .animation-service img{
     filter: var(--filter-blue);
-    width: 60%;
+    width: 100%;
     margin: auto;
     transition: all 2s ease-in-out;
     animation: service-float 2s ease-in-out infinite normal ;
@@ -80,8 +82,15 @@
 }
         
 .container-service .animation-service .jet{
-    right: 5%;
-    top: calc(100% - 2px);
+    
+    position: absolute;
+    top: 98%;
+    left: 35%;
+}
+
+.section:nth-child(1) .container-service .animation-service .jet,
+.section:nth-child(2) .container-service .animation-service .jet{
+    left: 32.5%;
 }
 
 .container-service .animation-service .jet::before,
@@ -89,129 +98,143 @@
 .container-service .animation-service .jet span{
     animation: moveSmoke 2.2s infinite;
     height: 200px;
-    top: -430px;
+    top: 0px;
     width: 40px;
-    left: 80%;
+    left: 0%;
+
 }
 
-.section:nth-child(2) .container-service .animation-service .jet::before,
-.section:nth-child(2) .container-service .animation-service .jet::after,
-.section:nth-child(2) .container-service .animation-service .jet span{
+            /* RESPOSIVE */
 
-    left: 20px;
+@media screen and (max-width: 1000px ){
+    .section .container-service .content-service{
+        width: 50%;
+        
+    }
+    .section .container-service .content-service h2{
+        font-size: 2rem;
+
+    }
+    .section .container-service .content-service p{
+        font-size: 1.2rem;
+
+    }
+    .container-service .animation-service .animation-img {
+        width: 45%;
+        top: 34%;
+    }
+
+    .container-service .animation-service .jet{
+        left: 30%;
+    }
+    .section:nth-child(1) .container-service .animation-service .jet,
+.section:nth-child(2) .container-service .animation-service .jet{
+    left: 25%;
 }
 
-.section:nth-child(3) .container-service .animation-service .jet::before,
-.section:nth-child(3) .container-service .animation-service .jet::after,
-.section:nth-child(3) .container-service .animation-service .jet span{
-
-    top: -395px;
-    left: 80%;
 }
 
-.section:nth-child(4) .container-service .animation-service .jet::before,
-.section:nth-child(4) .container-service .animation-service .jet::after,
-.section:nth-child(4) .container-service .animation-service .jet span{
+@media screen and (max-width: 850px ){
+    .container-service .content-service{
+        padding: 1rem 3rem 1rem 2rem;
+    }
+    .section .container-service .content-service h2{
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
 
-    left:130%;
+    }
+    .section .container-service .content-service p{
+        font-size: 1rem;
+
+    }
+    .container-service .animation-service .animation-img {
+        width: 45%;
+        top: 34%;
+    }
+    .container-service .animation-service .jet{
+        top: 90%;
+        left: 25%;
+    }
+    .section:nth-child(1) .container-service .animation-service .jet,
+    .section:nth-child(2) .container-service .animation-service .jet{
+        left: 20%;
+    }
 }
 
-.section:nth-child(5) .container-service .animation-service .jet::before,
-.section:nth-child(5) .container-service .animation-service .jet::after,
-.section:nth-child(5) .container-service .animation-service .jet span{
-    top: -415px;
+@media screen and (max-width: 750px ){
+    .section{
+        height: max-content;
+    }
+    
+    .container-service .animation-service{
+        width: 40%;
+        
+    }
+    .container-service .animation-service .animation-img{
+        top: 40%;
+    }
+    .container-service .animation-service .jet{
+        left: 25%;
+    }
 }
 
-.section:nth-child(6) .container-service .animation-service .jet::before,
-.section:nth-child(6) .container-service .animation-service .jet::after,
-.section:nth-child(6) .container-service .animation-service .jet span{
-    top: -410px;
-    left: 20px;
+@media screen and (max-width: 600px ){
+    .container-service{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .section .container-service .content-service{
+        width: 80% ;
+        margin-top: 2rem;
+    }
+    .section .container-service .container-service h2{
+        margin-bottom: .5rem;
+    }
+    .section .container-service .container-service h2{
+        margin-bottom: .5rem;
+    }
+    
+    .container-service .container-service .animation-img{
+        top: 100%;
+    }
+    /* .container-service .animation-service {
+        border: 1px solid blue;
+
+    } */
+    .section:nth-child(1) .container-service .animation-service .animation-img{
+        top:22%;
+    }
+    .container-service .animation-service .jet{
+        top: 100%;
+        
+    }
+    .section:nth-child(1) .container-service .animation-service .jet{
+        top: 100%;
+    }
+
+
+    .container-service .animation-service .jet::before,
+.container-service .animation-service .jet::after,
+.container-service .animation-service .jet span{
+    height: 150px;
+    width: 30px;
+
+    }
+
+    /* .section {
+        border: 1px solid red;
+    } */
+
+    /* .section .content-service{
+        border: 1px solid yellow;
+    }
+    .content-service .animation-service{
+        border: 1px solid salmon;
+    } */
+
+    
 }
-
-.section:nth-child(7) .container-service .animation-service .jet::before,
-.section:nth-child(7) .container-service .animation-service .jet::after,
-.section:nth-child(7) .container-service .animation-service .jet span{
-    top: -404px;
-    left: -30px;
-}
-
-.section:nth-child(8) .container-service .animation-service .jet::before,
-.section:nth-child(8) .container-service .animation-service .jet::after,
-.section:nth-child(8) .container-service .animation-service .jet span{
-    top: -408px;
-    left: -30px;
-}
-
-.section:nth-child(9) .container-service .animation-service .jet::before,
-.section:nth-child(9) .container-service .animation-service .jet::after,
-.section:nth-child(9) .container-service .animation-service .jet span{
-    top: -406px;
-    left: -30px;
-}
-
-.container-service .animation-service .jet::after {
-    animation-delay: 1.1s;
-  }
-  
- .container-service .animation-service  .jet span {
-    animation-delay: .2s;
-  }
-
-.section:nth-child(2) .container-service .animation-service img{
-    width: 56%;
-}
-
-.section:nth-child(3) .container-service .animation-service img{
-    width: 58%;
-    margin-top: 3.5rem;
-}
-
-.section:nth-child(4) .container-service h2{
-    font-size: 2.3rem;
-}
-.section:nth-child(4) .container-service img{
-    margin-top: 1.5rem;
-}
-
-.section:nth-child(5) .container-service .animation-service img{
-    width: 55%;
-}
-
-.section:nth-child(6) .container-service .animation-service img{
-    width: 55%;
-    margin-top: 2rem;
-}
-
-.section:nth-child(7) .container-service p{
-    padding-right: 0;
-    font-size: 1.2rem;
-}
-
-.section:nth-child(7) .container-service .animation-service img{
-    width: 54%;
-    margin-top: 6rem;
-}
-
-
-.section:nth-child(8) .container-service p{
-    font-size: 1.12rem;
-    padding-right: 0;
-}
-
-.section:nth-child(8) .container-service .animation-service img{
-    width: 54%;
-    margin-top: 6rem;
-}
-
-.section:nth-child(9) .container-service p{
-    font-size: 1.12rem;
-    padding-right: 0;
-}
-
-.section:nth-child(9) .container-service .animation-service img{
-    width: 54%;
-    margin-top: 6rem;
-}
-
-

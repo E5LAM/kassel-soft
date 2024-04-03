@@ -205,3 +205,49 @@ margin: auto 0px;
     display: inline;
     position: absolute;
 }
+
+            /* RESPOSIVE */
+
+@media screen and (max-width: 1000px ){
+    .container-contact {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .container-contact{
+        width: 75%;
+    }
+    .box{
+        height: 19rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .heading {
+        margin-top: 4rem;
+    }
+    .container-contact{
+        width: 95%;
+    }
+    .box{
+        width: 90%;
+        height: 19rem;
+    }
+}
+
+@media screen and (max-width: 450px ){
+
+    .container-contact .contact-info {
+        width: 120%;
+        margin-left: -2.2rem;
+    }
+    .container-contact .contact-info .info-item{
+        width: 45%;
+        
+    }
+    .contact-info .info-item p{
+        font-size: .85rem;
+        
+    }
+}
