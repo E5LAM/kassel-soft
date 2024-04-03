@@ -1982,7 +1982,13 @@ h1 span {
     }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 450px){
+    .navbar{
+        width: 100vw;
+    }
+    .navbar .language-button {
+        display: none;
+    }
     body{
         overflow-x: hidden;
     }
