@@ -2005,7 +2005,7 @@ h1 span {
         transform: rotateY(calc(var(--i) * 52deg)) translateZ(130px);
     }
     .container .animation span h2{
-        margin-left: -1rem;
+        margin-left: -.2rem;
     }
     .navbar .language-button{
         position: absolute;
