@@ -1972,7 +1972,6 @@ h1 span {
     .footer .support-section,
 .footer .location-section{
     width: max-content;
-    border: 1px solid red;
     margin: 0 0;
 }
 
@@ -1984,6 +1983,68 @@ h1 span {
 }
 
 @media screen and (max-width: 425px){
-   
+    .section:nth-child(1) .container .animation {
+        width: 70px ;
+        height: 70px;
+        left: -16%;
+    }
+    .container .animation span{
+        transform: rotateY(calc(var(--i) * 52deg)) translateZ(130px);
+    }
+    .container .animation span h2{
+        margin-left: -1rem;
+    }
+    .navbar .language-button{
+        position: absolute;
+        left: 57%;
+        top: 100%;
+    }
+    .section:nth-child(1) .container .content h2{
+        font-size: 1rem;
+
+    }
+    .section:nth-child(1) .container .content p{
+        font-size: .8rem;
+    }
+    .section:nth-child(1)  .content .primary-btn a{
+        font-size: 1rem;
+    }
+    .section:nth-child(1)  .content .primary-btn {
+       padding: 1rem 1.2rem;
+    }
+
+    .services-section .service-box{
+        width: 35%;
+        margin: 1rem 0rem;
+    }
+    .services-section .service-box .img-section img{
+        width: 40%;
+    }
+    .services-section .service-box .hedding-section h2 span{
+        font-size: 1.1rem;
+        line-height: normal;
+    }
+    .services-section .service-box .hedding-section {
+        padding: 0 .5rem;
+    }
+
+    .section:nth-child(3) .heading h5{
+        font-size: .8rem;
+    }
+    .section:nth-child(3) .heading h1 span{
+        font-size: 1.8rem;
+        display: inline;
+    }
+
+    .work .work-container .box img{
+        width: 40%;
+    }
+    .work .work-container .box p{
+        font-size: .8rem;
+    }
+
+    .experience .heading h1 span {
+        font-size: 1.8rem;
+    }
 
 }
