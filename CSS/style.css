@@ -1983,6 +1983,9 @@ h1 span {
 }
 
 @media screen and (max-width: 425px){
+    body{
+        overflow-x: hidden;
+    }
     .section:nth-child(1) .container .animation {
         width: 70px ;
         height: 70px;
