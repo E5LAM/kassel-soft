@@ -1256,6 +1256,7 @@ h1 span {
     padding: auto 20rem;
     padding-top: 3rem;
     color: whitesmoke;
+    box-sizing: border-box;
 }
 
 .footer .container-footer{
@@ -1263,7 +1264,7 @@ h1 span {
     display: flex;
     height: 100%;
 
-
+    box-sizing: content-box;
 }
 
 .footer .container-footer .contact-section{
@@ -1282,6 +1283,7 @@ h1 span {
     gap: .5rem;
     text-transform: capitalize;
     align-items: center;
+    box-sizing: content-box;
 }
 
 .footer .name a{
@@ -1311,11 +1313,13 @@ h1 span {
 
 .contact-section .contact-item p{
     color: whitesmoke;
+    box-sizing: content-box;
 }
 .contact-section .contact-item h4{
     color: whitesmoke;
     margin-right: 1rem;
     font-size: 1.5rem;
+    box-sizing: content-box;
 }
 
 .contact-section .contact-item input{
@@ -1326,6 +1330,7 @@ h1 span {
     outline: none;
     color: whitesmoke;
     font-size: 1rem;
+    box-sizing: content-box;
     width: 50%;
 }
 
@@ -1351,6 +1356,7 @@ h1 span {
     transition: all .4s ease-in-out;
     box-shadow: inset 1px 1px 3px whitesmoke,
                 inset -1px -1px 3px whitesmoke ;
+    box-sizing: content-box;
 
                 &:nth-child(1):hover{
                     scale: .3; 
@@ -1470,12 +1476,12 @@ h1 span {
     margin-bottom: 1.3rem;
     position: relative;
 }
-
+/* 
 .footer .location-section{
     width: 25%;
     margin-left: 2rem;
-
-}
+    border: 1px solid red;
+} */
 
 .footer .location-section .location-item{
     margin-bottom: 2rem;
@@ -1491,13 +1497,20 @@ h1 span {
     width: 100%;
 }
 
-.footer .support-section,
+.footer .support-section{
+    margin-top: 1.5rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+}
+
 .footer .location-section{
     margin-top: 1.5rem;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-
+    align-items: left;
+    width: 25%;
+    margin-left: 2rem;
 }
 
 .footer .support-section .support-heading h3,
@@ -1881,8 +1894,10 @@ h1 span {
         font-size: 2rem;
     }
 
+    .footer .location-section .location-heading{
+        width: 150%;
+    }
     
-
     ::-webkit-scrollbar{
         display: none;
     }
@@ -1991,17 +2006,19 @@ h1 span {
         margin: 0rem .5rem;
     }
 
-    .footer .support-section,
-.footer .location-section{
-    width: max-content;
-    margin: 0 0;
-}
 
+    .footer .container-footer .support-section{
+        width: max-content;
+        margin-left: -2rem;
+
+    }
 
     .footer .container-footer .location-section{
-        margin-left: 2rem;
- 
+        margin-left: -2rem;
+        width: max-content;
+        margin-right: 0;
     }
+
 }
 
 @media screen and (max-width: 450px){
@@ -2081,12 +2098,38 @@ h1 span {
     .experience .heading h1 span {
         font-size: 1.8rem;
     }
-    .footer .contact-section .contact-item{
-        width: 50%;
-        display: none;
+    .footer .contact-section {
+        display: flex ;
+        flex-direction: column;
     }
-    .footer {
-        display: none;
+    .footer .contact-item .support-section{
+        
+    }
+    .footer .contact-item .location-section{
+
+    }
+    .footer .contact-item .nav-section{
+
+    }
+    .footer , .footer .container-footer{
+       
+        display: flex;
+    }
+    .footer .container-footer .contact-section{
+        margin-left: 3rem;
+        margin-right: 1rem;
+    }
+    .footer .container-footer{
+        flex-direction: column;
+    }
+    .footer .contact-section .contact-item:nth-last-child(1) i{
+        font-size: 1rem;
+    }
+    .contact-section .contact-item .iconDiv{
+        margin-right: .12rem;
+    }
+    .footer .container-footer .contact-item .contact-item h4{
+        margin-right: -.5rem ;
     }
 
 }

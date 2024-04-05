@@ -1,15 +1,19 @@
 *{
-    box-sizing: border-box;
+
 }
 
 
 .heading{
     font-size: 2.5rem ;
     margin: 2rem auto;
+    box-sizing: border-box;
+
 }
 
 .section:nth-child(1){
     height: max-content;
+    box-sizing: border-box;
+
 }
 .container-contact{
     width: 50%;
@@ -19,10 +23,14 @@
     padding: 0rem 1.5rem;
     margin: 1rem auto;
     flex-direction: column-reverse;
+    box-sizing: border-box;
+
 }
+
 
 .container-contact .contact {
     width: 100%;
+    box-sizing: border-box;
 
 }
 
@@ -32,6 +40,8 @@
     flex-direction: column;
     margin: 1rem auto;
     justify-content: center;
+    box-sizing: border-box;
+
 }
 
 .contact .input-box{
@@ -39,10 +49,14 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    box-sizing: border-box;
+
 }
 
 .contact .input-box .input-field{
     width: 100%;
+    box-sizing: border-box;
+
 }
 
 .contact .input-box .item{
@@ -55,6 +69,8 @@
     background-color: transparent;
     border-radius: .5rem;
     margin-bottom: 1rem;
+    box-sizing: border-box;
+
 }
 
 .field.error .item{
@@ -70,6 +86,8 @@
     border: 2px solid var(--blue);
     color: var(--text-color);
     margin-bottom: .3rem;
+    box-sizing: border-box;
+
 }
 
 .contact textarea::placeholder{
@@ -90,6 +108,8 @@
     font-size: 1.2rem ;
     font-weight: bold;
     transition: all .3s ease-in-out;
+    box-sizing: border-box;
+
 }
 .contact form button:hover{
     box-shadow: none;
@@ -207,7 +227,10 @@ margin: auto 0px;
     position: absolute;
 }
 
-
+/* .footer .container-footer .contact-item h4{
+    font-size: 1.5rem;
+    border: 1px solid red;
+} */
 
             /* RESPOSIVE */
 
