@@ -163,7 +163,7 @@
 
 @media screen and (max-width: 750px ){
     .section{
-        height: max-content;
+        height: fit-content;
     }
     
     .container-service .animation-service{
@@ -199,22 +199,29 @@
     }
     
     .container-service .container-service .animation-img{
-        top: 100%;
+        top: 50%;
     }
     /* .container-service .animation-service {
         border: 1px solid blue;
 
     } */
-    .section:nth-child(1) .container-service .animation-service .animation-img{
-        top:22%;
+    .section:nth-child(1) .container-service{
+        margin-top: 6rem;
     }
-    .container-service .animation-service .jet{
-        top: 100%;
-        
+    .section:nth-child(1) .container-service .animation-service .animation-img{
+        top:5%;
     }
     .section:nth-child(1) .container-service .animation-service .jet{
         top: 100%;
+        
     }
+    .container-service .animation-service .jet{
+        top: 125%;
+        
+    }
+    /* .section:nth-child(1) .container-service .animation-service .jet{
+        top: 100%;
+    } */
 
 
     .container-service .animation-service .jet::before,
@@ -225,16 +232,44 @@
 
     }
 
-    /* .section {
-        border: 1px solid red;
-    } */
-
-    /* .section .content-service{
-        border: 1px solid yellow;
+    .section{
+        height: max-content;
     }
-    .content-service .animation-service{
-        border: 1px solid salmon;
-    } */
+    .container-service{
+        height: max-content;
+    }
+    .container-service .content-service{
+        height: max-content;
+    }
+    .container-service .animation-service{
+        height: 10rem;
+    }
+    .container-service .animation-service .animation-img{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
 
+@media  screen and (max-width: 450px){
+    .container-service .animation-service .jet::before,
+.container-service .animation-service .jet::after,
+.container-service .animation-service .jet span{
+    height: 120px;
+    width: 18px;
+    }
+
+    .section .container-service .animation-service .jet{
+        transform: translate(-10px) rotate(-90deg);
+    }
+    .section:nth-child(1) .container-service .animation-service .jet{
+        transform: translate(-10px) rotate(-90deg);
+        top: 120%;
+    }
     
+    .section .container-service .animation-service .animation-img{
+        top:50%;
+    }
+    .container-service .animation-service .animation-img{
+        width: 65%;
+    }
 }

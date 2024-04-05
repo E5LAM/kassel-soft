@@ -137,6 +137,7 @@
     width: 13%;
     height: 8%;
     margin: 1rem 1.5rem;
+    background-color: var(--bg-item);
 
 }
 
