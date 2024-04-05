@@ -16,7 +16,8 @@
     /* --bg-color : #1f1f1f; */
     /* --bg-color : #0f0f0f; */
     --bg-color : #c8d0d6;
-    --bg-item : #b6bfcf;
+    --bg-item : inherit;
+    /* --bg-item : #b6bfcf; */
     --text-color: #000000;
 
     --blue-black:#243b55;
@@ -1191,6 +1192,7 @@ h1 span {
 
 
                 /* CARD */
+
 .cards-wrapper {
   margin-top: 50px;
 }
