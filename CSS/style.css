@@ -1837,7 +1837,17 @@ h1 span {
         box-shadow: 0 .5rem 1rem black;
     }
 
-    
+    .footer .container-footer .contact-section .contact-item h4{
+        display: none;
+    }
+    .footer .container-footer .contact-section button{
+        margin-left: -2rem;
+    }
+    .footer .container-footer .contact-section {
+        width: 120%;
+       transform: translate(-100px);
+       padding-left: 0.2rem;
+    }
 
     .nav-toggle a{
         text-decoration: none;

@@ -19,7 +19,7 @@
     margin-bottom: 1.8rem;
 }
 .section:nth-child(1) .container .content .check-text .item i{
-    color: rgb(1, 243, 1);
+    color: var(--blue-white);
     margin-right: .2rem;
 }
 
