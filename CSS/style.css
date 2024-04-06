@@ -1613,7 +1613,23 @@ h1 span {
     font-size: 1.2rem;
 }
 
-
+.nav-toggle{
+    position: absolute;
+    top: -70%;
+    left: 0;
+    width: 100%;
+    height: 20rem ;
+    background: transparent;
+    backdrop-filter: blur(50px) ;
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    padding-top: 3rem;
+    box-shadow: 0 .5rem 1rem black;
+}
 
 
 ::-webkit-scrollbar{
