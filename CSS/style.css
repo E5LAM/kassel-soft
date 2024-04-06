@@ -1631,6 +1631,7 @@ h1 span {
 }
 
 
+
             /*///////////////  Responsive ////////////////*/
 
 
@@ -1762,6 +1763,16 @@ h1 span {
     }
     .footer .container-footer .nav-section .nav-heading{
         margin-top: .7rem;
+    }
+
+    .navbar .animation-box{
+        z-index: 1001;
+    }
+    .navbar .nav-icon{
+        z-index: 1001;
+    }
+    .nav-toggle{
+        z-index: 1000;
     }
 }
 
