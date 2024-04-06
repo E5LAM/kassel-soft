@@ -7,6 +7,8 @@
 :root {
     --primary:  hsl(260, 100%, 80%);
     --blue: #002646 ;
+    --blue-white:  ;
+
     --purple: #ff00ff ;
     --yellow: #ffff81;
     --green: #99ff00 ;
@@ -2178,8 +2180,11 @@ h1 span {
         font-size: 2rem;
         margin-bottom: 1rem;
     }
-    .footer .container-footer .contact-section button{
-
+    .footer .container-footer .contact-section .contact-item button{
+        padding: .5rem .75rem;
+    }
+    .footer .container-footer .contact-section .contact-item input{
+        width: 70%;
     }
 
 }
