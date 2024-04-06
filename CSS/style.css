@@ -15,7 +15,7 @@
     --gradient-end :#ec8c69;
     /* --bg-color : #1f1f1f; */
     /* --bg-color : #0f0f0f; */
-    --bg-color : white
+    --bg-color : white;
     --bg-item : white ;
     /* --bg-item : #c8d0d6; */
     /* --bg-item : #b6bfcf; */
@@ -1577,6 +1577,7 @@ h1 span {
     height: fit-content;
     font-size: 1.2rem;
 }
+
 
 
 
