@@ -235,6 +235,10 @@ margin: auto 0px;
     .container-contact {
         width: 60%;
     }
+    .contact-info .info-item p{
+        color: var(--blue);
+        
+    }
 }
 
 @media screen and (max-width:850px) {

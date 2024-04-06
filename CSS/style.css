@@ -977,7 +977,7 @@ h1 span {
 }
 
 .why-us .heading h5{
-    color: var(--blue);
+    color: var(--blue-white);
     font-size: 1.2rem ;
     margin-bottom: .5rem;
     text-transform: capitalize;
@@ -1098,6 +1098,7 @@ h1 span {
     text-transform: capitalize;
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: var(--blue-white);
 }
 .work  .heading h4{
     text-transform: capitalize;
@@ -1128,6 +1129,7 @@ h1 span {
 .work .work-container .box img{
     filter: var(--filter-blue);
     width: 30%;
+
     margin: 0rem auto;
 
 }
@@ -1955,7 +1957,8 @@ h1 span {
         justify-content: center;
     }
     .services-section .service-box .img-section img{
-        width: 30%;
+        width: 25%;
+        height: 100%;
     }
     .services-section .hedding-section{
         font-size: 1rem;
