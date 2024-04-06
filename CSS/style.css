@@ -324,10 +324,10 @@ h1 span {
     border-radius: 1rem;
     /* background-image: linear-gradient(#eee 10% , rgb(30, 30, 30) 42% , var(--blue) 300%); */
 	background-color: var(--blue-white);
-    text-shadow: 0 -2px 0 black;
+    /* text-shadow: 0 -2px 0 black; */
 	cursor: pointer;
     text-align: center;
-	box-shadow: 1px 2px 4px rgb(20, 20, 20), 0 4px 12px rgb(10, 10, 10);
+	/* box-shadow: 1px 2px 4px rgb(20, 20, 20), 0 4px 12px rgb(10, 10, 10); */
     width: fit-content;
     padding: 1rem 2rem;
     margin: 2rem;
