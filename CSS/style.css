@@ -1619,7 +1619,7 @@ h1 span {
     left: 0;
     width: 100%;
     height: 20rem ;
-    background: transparent;
+    background: red;
     backdrop-filter: blur(50px) ;
     z-index: 1000;
     display: none;
@@ -1825,7 +1825,7 @@ h1 span {
         left: 0;
         width: 100%;
         height: 20rem ;
-        background: transparent;
+        background: var(--bg-color);
         backdrop-filter: blur(50px) ;
         z-index: 1000;
         display: flex;
