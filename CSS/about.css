@@ -246,10 +246,7 @@
         margin-bottom: 1rem;
     }
 
-    .footer{
-        display: none;
-    }
-
+   
     .section:nth-child(2) .container .content h2{
         margin-bottom: .2rem;
     }

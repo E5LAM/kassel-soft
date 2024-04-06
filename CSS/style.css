@@ -7,8 +7,7 @@
 :root {
     --primary:  hsl(260, 100%, 80%);
     --blue: #002646 ;
-    --blue-white:  ;
-
+    --blue-white: #0264b4 ;
     --purple: #ff00ff ;
     --yellow: #ffff81;
     --green: #99ff00 ;
@@ -165,6 +164,8 @@ nav,
         transform: translate(0);
     }
 } */
+
+
 nav , select  , option {
 	border-radius: 1rem;
 	/* background-image: linear-gradient(rgb(48, 48, 48) 13% , rgb(30, 30, 30) 40% , #0c0d11 86%); */
@@ -308,7 +309,7 @@ h1 span {
 }
 
 .container .content h2 {
-    color: var(--blue);
+    color: var(--blue-white);
     font-size: 2rem;
 }
 
@@ -322,7 +323,7 @@ h1 span {
 .primary-btn{
     border-radius: 1rem;
     /* background-image: linear-gradient(#eee 10% , rgb(30, 30, 30) 42% , var(--blue) 300%); */
-	background-color: var(--blue);
+	background-color: var(--blue-white);
     text-shadow: 0 -2px 0 black;
 	cursor: pointer;
     text-align: center;
