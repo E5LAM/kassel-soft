@@ -323,7 +323,7 @@ h1 span {
 .primary-btn{
     border-radius: 1rem;
     /* background-image: linear-gradient(#eee 10% , rgb(30, 30, 30) 42% , var(--blue) 300%); */
-	background-color: var(--blue-white);
+	background-color: var(--blue);
     /* text-shadow: 0 -2px 0 black; */
 	cursor: pointer;
     text-align: center;
@@ -2165,7 +2165,7 @@ h1 span {
     }
 
     .work .work-container .box img{
-        width: 40%;
+        width: 30%;
     }
     .work .work-container .box p{
         font-size: .8rem;

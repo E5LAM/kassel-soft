@@ -100,7 +100,6 @@
     outline: none;
     border-radius: .5rem;
     color: var(--bg-color);
-    box-shadow: 0 0 .7rem var(--blue);
     width: max-content;
     margin: 0rem auto 0rem auto;
     font-size: 1.2rem ;

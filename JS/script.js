@@ -27,20 +27,20 @@ var cursor2 = document.querySelector(".cursor2");
 // });
 
 
-const cards = document.querySelectorAll('.card');
+// const cards = document.querySelectorAll('.card');
 
-function hoverRotate(e) {
-  e.target.classList.add('rotated');
-}
+// function hoverRotate(e) {
+//   e.target.classList.add('rotated');
+// }
 
-function hoverOutRotate(e) {
-  e.target.classList.remove('rotated');
-}
+// function hoverOutRotate(e) {
+//   e.target.classList.remove('rotated');
+// }
 
-cards.forEach(card => {
-  card.addEventListener('mouseenter', hoverRotate);
-  card.addEventListener('mouseleave', hoverOutRotate);
-});
+// cards.forEach(card => {
+//   card.addEventListener('mouseenter', hoverRotate);
+//   card.addEventListener('mouseleave', hoverOutRotate);
+// });
 
     //////// TRANSLATE ///////////////
     const translations = {
