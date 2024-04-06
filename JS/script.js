@@ -42,18 +42,73 @@ cards.forEach(card => {
   card.addEventListener('mouseleave', hoverOutRotate);
 });
 
+    //////// TRANSLATE ///////////////
+    const translations = {
+      en: {
+        home: "home",
+        about : "about us",
+        services: "services",
+        contact: "contact us",
+    
+      },
+      ar: {
+        home: "الرئيسية",
+        about : "معلومات عنا",
+        services: "خدماتنا",
+        contact: "تواصل معنا",
+    
+      },
+    }
+    
+    const languageSelector = document.querySelector('#select') 
+    
+    languageSelector.addEventListener('change' , (event) =>{
+      selectLanguage(event.target.value);
+    })
+    
+    const selectLanguage = (language) => {
+      const element = document.querySelectorAll("[i18n]");
+      element.forEach((element) =>{
+        const translationKey = element.getAttribute("data-i18n");
+        element.textContent = translations[language][translationKey];
+      })
+    }
 
-      //  CONTACT US (SEND EMAIL) //
+  
+     ////////// //  CONTACT US (SEND EMAIL) //////////////
 
-const form = document.querySelector("form");
-const fullName = document.getElementById("name")
-const email = document.getElementById("email")
-const phone = document.getElementById("phone")
-const subject = document.getElementById("subject")
-const message = document.getElementById("message")
+
+let form = document.getElementById("contact-form");
+const fullName = document.getElementById("name");
+let email = document.getElementById("email");
+const phone = document.getElementById("phone");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
+
+function sendFooterEmail(){
+  let bodyMessage = `Email: ${email.value} `;
+
+  Email.send({
+    SecureToken : "b4f57967-11c5-4cf6-825a-09d39b72db2b",
+    To : 'kasselsoft@kasselsoft.com',
+    From : "kasselsoft@kasselsoft.com",
+    Subject : email.value,
+    Body : bodyMessage
+  }).then(
+    message => {
+      if(message == "OK"){
+        Swal.fire({
+          title: "Success!",
+          text: "Email sent Successfully",
+          icon: "success"
+        });
+      }
+    }
+  );
+}
 
 function sendEmail(){
-  const bodyMessage = `Full Name: ${fullName.value} <br>
+  let bodyMessage = `Full Name: ${fullName.value} <br>
   Email: ${email.value} <br> Phone Number: ${phone.value} <br>
   Message: ${message.value} `;
 
@@ -76,8 +131,8 @@ function sendEmail(){
   );
 }
 
-function checkInputs(){
-  const items = document.querySelectorAll('.item')
+function checkFooterInputs(){
+  let items = document.querySelectorAll('.f-item')
 
   for(const item of  items ){
     if(item.value == ""){
@@ -97,6 +152,45 @@ function checkInputs(){
   }
 }
 
+function checkInputs(){
+  let items = document.querySelectorAll('.item')
+
+  for(const item of  items ){
+    if(item.value == ""){
+      item.classList.add("error");
+      item.parentElement.classList.add("error");
+    }
+
+    item.addEventListener("keyup" , (e) =>{
+      if(item.value != ""){
+      item.classList.remove("error");
+      item.parentElement.classList.remove("error");
+      }else{
+      item.classList.add("error");
+      item.parentElement.classList.add("error");
+      }
+    })
+  }
+}
+
+const footerForm = document.getElementById('footer-form');
+
+footerForm.addEventListener("submit", (e) =>{
+  e.preventDefault();
+  checkFooterInputs();
+  if(!email.classList.contains("error") 
+    ){
+      sendFooterEmail();
+    // console.log("ok");
+    footerForm.reset();
+    return false;
+  }
+})
+
+
+
+
+
 
 form.addEventListener("submit", (e) =>{
   e.preventDefault();
@@ -111,6 +205,9 @@ form.addEventListener("submit", (e) =>{
     return false;
   }
 })
+
+
+      
 
       // NAV ICON
 function hideSlider(){
@@ -131,3 +228,5 @@ function showSlider(){
   const navToggle = document.querySelector(".nav-toggle");
   navToggle.style.top = '-70%';
 }
+
+

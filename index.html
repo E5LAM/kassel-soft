@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KASSEL SOFT</title>
         <!-- font awesome icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,25 +28,25 @@
             <nav class="menu" id="nav">
                 
                     <span class="nav-item ">
-                        <a href="index.html">Home</a>
+                        <a href="index.html" data-i18n="home">Home</a>
                     </span>
 
                     <span class="nav-item">
-                        <a href="about-us.html">about us</a>
+                        <a href="about-us.html" data-i18n="about">about us</a>
                     </span>
                 <span class="nav-item">
-                    <a href="services.html">services</a>
+                    <a href="services.html" data-i18n="services">services</a>
                 </span>
                 <span class="nav-item">
-                    <a href="contact.html">contact us</a>
+                    <a href="contact.html" data-i18n="contact">contact us</a>
                 </span>
             </nav>
 
             
             <div class="language-button">
-                <select name="" id="">
-                    <option value="">ENG</option>
-                    <option value="">ARB</option>
+                <select name="" id="select">
+                    <option value="en" selected>ENG</option>
+                    <option value="ar">ARB</option>
                 </select>
             </div>
             <input type="checkbox" id="check" >
@@ -683,16 +681,18 @@ and satisfactorily
                     <button type="submit"></button>
                 </div> -->
 
-                <form action="#">
-                    <div class="input-field field">
-                        <input type="email" placeholder="E-mail" id="email"
-                        class="item" autocomplete="off">
-                        <div class="error-txt">
-                            E-mail Address can't be blank
+                <div class="contact-item">
+                    <form action="#" id="footer-form" >
+                        <div class="input-field field">
+                            <input type="email" placeholder="E-mail" id="email"
+                            class="f-item" autocomplete="off">
+                            <div class="error-txt">
+                                E-mail Address can't be blank
+                            </div>
                         </div>
-                    </div>
-                    <button type="submit" >Send  Message</button>
-                </form>
+                        <button type="submit" >Send  Email</button>
+                    </form>
+                </div>
 
                 <div class="contact-item">
 
@@ -817,6 +817,8 @@ and satisfactorily
     
     <div class="cursor"></div>
     <div class="cursor2"></div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="JS/script.js"></script>
 </body>
 </html>

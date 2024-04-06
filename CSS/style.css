@@ -1334,7 +1334,38 @@ h1 span {
     color: whitesmoke;
     font-size: 1rem;
     box-sizing: content-box;
-    width: 50%;
+    width: 85%;
+}
+.contact-section .contact-item .field.error .f-item{
+    border-color:#e00000 ;
+}
+.contact-section .contact-item .error-txt{
+    color: #e00000;
+    font-size: .8rem;
+    text-align: left;
+    margin: 3px 0px -5px 3px;
+    display: none;
+    
+}
+.field.error .error-txt{
+    display: block;
+}
+
+.contact-section .contact-item:nth-child(3) form{
+    display: flex;
+    
+}
+.contact-section .contact-item:nth-child(3) button{
+    font-size: 1rem ;
+    background-color: var(--bg-color);
+    color:#0c0e13 ;
+    padding: .7rem 1rem ;
+    border-radius: .7rem ;
+    font-weight: bold;
+    margin-left: .5rem ;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid black;
 }
 
 .contact-section .contact-item input::placeholder{
@@ -2106,15 +2137,7 @@ h1 span {
         display: flex ;
         flex-direction: column;
     }
-    .footer .contact-item .support-section{
-        
-    }
-    .footer .contact-item .location-section{
-
-    }
-    .footer .contact-item .nav-section{
-
-    }
+    
     .footer , .footer .container-footer{
        
         display: flex;
@@ -2134,6 +2157,25 @@ h1 span {
     }
     .footer .container-footer .contact-item .contact-item h4{
         margin-right: -.5rem ;
+    }
+
+
+    .footer .container-footer .nav-section h3{
+        font-size: 1.2rem;
+    }
+    .footer .container-footer .nav-section {
+        margin-left: -1.5rem;
+        width: max-content;
+        text-align: left;
+        margin-right: 0;
+    }
+    .footer  .nav-section .nav-link{
+        width: 100%;
+    }
+
+    .footer .container-footer .support-section h3{
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
 }
