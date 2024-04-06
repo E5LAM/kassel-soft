@@ -340,7 +340,7 @@ h1 span {
     -webkit-background-clip: text;
     -webkit-text-fill-color: white;
     font-weight: bold; 
-    filter: drop-shadow( 0rem 2.1rem .95rem var(--blue));
+    /* filter: drop-shadow( 0rem 2.1rem .95rem var(--blue)); */
     color: white;
 }
 
