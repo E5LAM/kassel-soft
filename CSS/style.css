@@ -152,7 +152,7 @@ nav,
     animation: float 1.2s ease-in-out infinite normal ;
     transition: all 1.2s ease-in-out infinite;
 }
-@keyframes float{
+/* @keyframes float{
     0%{
       transform: translate(0px);
     }
@@ -162,7 +162,7 @@ nav,
     100%{
         transform: translate(0);
     }
-}
+} */
 nav , select  , option {
 	border-radius: 1rem;
 	/* background-image: linear-gradient(rgb(48, 48, 48) 13% , rgb(30, 30, 30) 40% , #0c0d11 86%); */
@@ -227,6 +227,7 @@ nav , select  , option {
     width: max-content;
     position: relative;
 }
+
 .jet {
     height: 10px;
     right: 85%;
@@ -2176,6 +2177,9 @@ h1 span {
     .footer .container-footer .support-section h3{
         font-size: 2rem;
         margin-bottom: 1rem;
+    }
+    .footer .container-footer .contact-section button{
+
     }
 
 }
