@@ -1,8 +1,7 @@
 body{
-    color: var(--text-color);
-    padding: 4rem;
+    
+    /* padding: 4rem; */
     text-align: left;
-    box-sizing: border-box;
     background-color: var(--bg-color);
 }
 
@@ -36,4 +35,10 @@ li{
     color: var(--text-color);
     margin-bottom: .5rem;
     line-height: 1.4rem;
+}
+
+.section:nth-child(1){
+    height: fit-content;
+    /* margin: -4rem  auto 0 -2rem; */
+    padding-bottom: 1rem;
 }

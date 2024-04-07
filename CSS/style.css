@@ -1914,6 +1914,10 @@ h1 span {
         font-size: 1.5rem;
     }
 
+    .footer .container-footer .contact-section{
+        margin-left: 3rem;
+        margin-right: 1rem;
+    }
 }
 
 @media screen and (max-width:650px){
@@ -1981,6 +1985,12 @@ h1 span {
         display: none;
     }
 
+    .footer .container-footer .contact-section .contact-item button{
+        padding: .5rem .75rem;
+    }
+    .footer .container-footer .contact-section .contact-item input{
+        width: 70%;
+    }
 }
 
 
