@@ -5,20 +5,21 @@ body{
     background-color: var(--bg-color);
 }
 
-p{
+.support-container p{
     font-size: 1.2rem ;
     color: var(--text-color);
     margin: 0 0 1.3rem 0;
     line-height: 1.5rem;
 }
 
-.support-heading{
+.support-container .support-heading{
     color: var(--blue);
     margin: 2rem 0;
 }
 
-h4{
-    color: var(--blue);
+.support-container h4{
+    /* color: var(--blue); */
+    color: black;
     margin: 0;
     margin-bottom: .25rem;
 }
@@ -27,10 +28,10 @@ h4{
     padding: 0rem 3rem ;
     line-height: 1.7rem;
 }
-ul{
+.support-container ul{
     padding: 0rem 3rem;
 }
-li{
+.support-container li{
     text-transform: capitalize;
     color: var(--text-color);
     margin-bottom: .5rem;
@@ -41,4 +42,11 @@ li{
     height: fit-content;
     /* margin: -4rem  auto 0 -2rem; */
     padding-bottom: 1rem;
+}
+
+
+@media screen and (max-width:600px){
+    .section:nth-child(1){
+        padding-bottom: 1.5rem ;
+    }
 }
