@@ -2162,8 +2162,17 @@ h1 span {
         width: 35%;
         margin: 1rem 0rem;
     }
+    .services-section .service-box:nth-child(3){
+        height: 8.5rem;
+        /* padding-top: 0; */
+    }
     .services-section .service-box .img-section img{
         width: 40%;
+
+    }
+    .services-section .service-box:nth-child(3) .img-section {
+        width: 100%;
+        margin-bottom: 1rem;
     }
     .services-section .service-box .hedding-section h2 span{
         font-size: 1.1rem;
