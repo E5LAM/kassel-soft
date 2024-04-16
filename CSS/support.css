@@ -48,5 +48,6 @@ body{
 @media screen and (max-width:600px){
     .section:nth-child(1){
         padding-bottom: 1.5rem ;
+        height: 5rem;
     }
 }
