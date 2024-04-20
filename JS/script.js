@@ -86,64 +86,59 @@ const phone = document.getElementById("phone");
 const subject = document.getElementById("subject");
 const message = document.getElementById("message");
 
-const jobForm = document.getElementById('job-form');
-const jobName = document.getElementById('job-name');
-const jobEmail = document.getElementById('job-email');
-const jobPhone = document.getElementById('job-phone');
-const jobAddress = document.getElementById('job-address');
-const jobTitle = document.getElementById('job-title');
-const cv = document.getElementById('cv');
 
 
         //  FOOTER
 
-// function sendFooterEmail(){
-//   let bodyMessage = `Email: ${footerEmail.value} `;
+function sendFooterEmail(){
+  let bodyFooter = `Email: ${footerEmail.value} `;
 
-//   Email.send({
-//     Host : "smtp.elasticemail.com",
-//     Username : "eslam01003733553@gmail.com",
-//     Password : "29593BB1A7E0E15D7C5B17013266EC55FFF1",
-//     To : 'eslam01003733553@gmail.com',
-//     From : "eslam01003733553@gmail.com",
-//     Subject : "KASSEL Website (Footer Email)",
-//     Body : bodyMessage
-//   }).then(
-//     message => {
-//       if(message == "OK"){
-//         Swal.fire({
-//           title: "Success!",
-//           text: "Email sent Successfully",
-//           icon: "success"
-//         });
-//       }
-//     }
-//   );
-// }
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "eslam01003733553@gmail.com",
+    Password : "29593BB1A7E0E15D7C5B17013266EC55FFF1",
+    To : 'eslam01003733553@gmail.com',
+    From : "eslam01003733553@gmail.com",
+    Subject : "KASSEL Website (Footer Email)",
+    // Body : "and this is body"
+    Body : bodyFooter
+  }).then(
+    message => {
+      if(message == "OK"){
+        Swal.fire({
+          title: "Success!",
+          text: "Email sent Successfully",
+          icon: "success"
+        });
+      }
+    }
+    // message => alert(message)
+  );
+}
 
 
       // FOOTER
 
-// function checkFooterInputs(){
-//   let items = document.querySelectorAll('.f-item')
+function checkFooterInputs(){
+  let items = document.querySelectorAll('.f-item')
 
-//   for(const item of  items ){
-//     if(item.value == ""){
-//       item.classList.add("error");
-//       item.parentElement.classList.add("error");
-//     }
+  for(const item of  items ){
+    if(item.value == ""){
+      item.classList.add("error");
+      item.parentElement.classList.add("error");
+    }
 
-//     item.addEventListener("keyup" , (e) =>{
-//       if(item.value != ""){
-//       item.classList.remove("error");
-//       item.parentElement.classList.remove("error");
-//       }else{
-//       item.classList.add("error");
-//       item.parentElement.classList.add("error");
-//       }
-//     })
-//   }
-// }
+    item.addEventListener("keyup" , (e) =>{
+      if(item.value != ""){
+      item.classList.remove("error");
+      item.parentElement.classList.remove("error");
+      }else{
+      item.classList.add("error");
+      item.parentElement.classList.add("error");
+      }
+    })
+  }
+}
 
 
 
@@ -152,17 +147,17 @@ const cv = document.getElementById('cv');
 
 const footerForm = document.getElementById('footer-form');
 
-// footerForm.addEventListener("submit", (e) =>{
-//   e.preventDefault();
-//   checkFooterInputs();
-//   if(!email.classList.contains("error") 
-//     ){
-//       sendFooterEmail();
-//     // console.log("ok");
-//     footerForm.reset();
-//     return false;
-//   }
-// })
+footerForm.addEventListener("submit", (e) =>{
+  e.preventDefault();
+  checkFooterInputs();
+  if(!footerEmail.classList.contains("error") 
+    ){
+      sendFooterEmail();
+    // console.log("ok");
+    footerForm.reset();
+    return false;
+  }
+})
 
 
       // CONTACT US
@@ -235,66 +230,6 @@ form.addEventListener("submit", (e) =>{
     return false;
   }
 })
-
-
-
-        //  JOB
-
-// function sendJobData(){
-//   let bodyMessage = `Full Name: ${jobName.value} <br>
-//   Email: ${jobEmail.value} <br> Phone Number: ${jobPhone.value} <br>
-//   Address: ${jobAddress.value} <br> Job Title: ${jobTitle.value} <br>
-//   CV: ${cv.value} `;
-
-//   Email.send({
-//     Host : "smtp.elasticemail.com",
-//     Username : "eslam01003733553@gmail.com",
-//     Password : "29593BB1A7E0E15D7C5B17013266EC55FFF1",
-//     To : 'eslam01003733553@gmail.com',
-//     From : "eslam01003733553@gmail.com",
-//     Subject : "KASSEL Website (Job Data)",
-//     Body : "this is body"
-//   }).then(
-//     // message => {
-//     //   if(message == "OK"){
-//     //     Swal.fire({
-//     //       title: "Success!",
-//     //       text: "Data sent Successfully",
-//     //       icon: "success"
-//     //     });
-//     //   }
-//     // }
-//     message => alert(message)
-//   );
-// }
-
-
-// function checkJobInputs(){
-//   let items = document.querySelectorAll('.job-item')
-
-//   for(const item of  items ){
-//     if(item.value == ""){
-//       item.classList.add("error");
-//       item.parentElement.classList.add("error");
-//     }
-
-//     item.addEventListener("keyup" , (e) =>{
-//       if(item.value != ""){
-//       item.classList.remove("error");
-//       item.parentElement.classList.remove("error");
-//       }else{
-//       item.classList.add("error");
-//       item.parentElement.classList.add("error");
-//       }
-//     })
-//   }
-// }
-
-
-        // JOB
-
-
-
 
 
 
