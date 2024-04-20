@@ -1,0 +1,121 @@
+.section{
+    /* height: max-content !important; */
+}
+
+.job-heading{
+    padding: 1rem 2rem;
+
+}
+
+.jobs-container h4{
+    color: var(--blue-white);
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 0.5rem ; 
+}
+
+.jobs-container h2{
+    font-size: 2rem ;
+    margin-bottom: 1rem; 
+    width: 80%;  
+}
+
+.jobs-container p{
+    font-weight: 600;
+}
+
+.job-boxs{
+    width: 100%;
+    padding: .5rem 1.5rem ;
+}
+
+.job-boxs .box {
+    padding: .75rem 1rem ;
+    width: 35%;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+    padding-bottom: 2rem ;
+}
+
+.job-boxs .box .heading{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 1rem ;
+}
+.job-boxs .box .heading .icon{
+    width: fit-content;
+    border-radius: .5rem;
+    padding: .6rem .7rem ;
+    background-color: rgba(135, 207, 235, 0.5);
+    height: fit-content;
+    margin: 0;
+    margin-right: .5rem;
+
+}
+
+.job-boxs .box .heading .icon i{
+    font-size: 1.3rem;
+}
+
+.job-boxs .box .heading h2{
+    font-size: 1.5rem ;
+    font-weight: 600;
+    width: fit-content;
+    margin-block: auto;
+}
+
+.job-boxs .job-description {
+    margin-bottom: 2.2rem ;
+}
+
+.job-boxs .job-description .title{
+    padding: .5rem ;
+    border: 1px solid black ;
+    border-radius: 2rem ;
+    width: fit-content;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.job-boxs .job-description .title p{
+    font-size: .95rem;
+    font-weight: 500;
+}
+
+.job-boxs .job-description .description{
+    width: fit-content;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.job-boxs .box a{
+    padding: 1rem 2.5rem ;
+    background-color: var(--blue-white);
+    border-radius: 1.5rem ;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.form-container .contact{
+    width: 50%;
+    margin: auto;
+}
+
+.data-container .heading h2{
+    font-size: 3.5rem;
+    margin-top:3rem;
+}
+
+.form-container .input-box .cv-box .item{ 
+    border: none;
+    outline: none;
+}
+
+.form-container .input-box .cv-box label{
+    font-weight: 600;
+    color: var(--blue);
+}
