@@ -1,3 +1,6 @@
+body{
+    position: relative;
+}
 .section{
     height: max-content !important;
 }
@@ -6,6 +9,7 @@
     padding: 1rem 2rem;
 
 }
+
 
 .jobs-container h4{
     color: var(--blue-white);
@@ -97,6 +101,11 @@
     margin-bottom: .5rem;
 }
 
+.job-boxs .box .links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 .job-boxs .box a{
     padding: 1rem 2.5rem ;
     background-color: var(--blue-white);
@@ -104,7 +113,10 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
+
+
 
 .form-container .contact{
     width: 50%;
@@ -130,6 +142,48 @@
     border: none;
 }
 
+.overview-box{
+    width: 85vw;
+    height: 80vh;
+    z-index: 3;
+    border: 3px solid var(--blue-white);
+    border-radius: 1rem;
+    overflow-y: scroll;
+    padding: 1rem 2rem;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    background-color: white;
+    display: none;
+    transition: all 1s ease-in-out;
+}
+
+.overview-box .close{
+    color: white;
+    font-size: 1.2rem;
+    background-color: red;
+    border-radius: .5rem;
+    padding: .35rem .5rem;
+    position: absolute;
+    top: 1%;
+    right: 0.4%;
+    font-weight: bold;
+    cursor: pointer;
+    /* border: 2px solid black; */
+}
+
+.overview-box ol{
+    margin-top:0 ;
+    margin-bottom: 1rem;
+}
+
+.overview-box::-webkit-scrollbar{
+    /* display: none;  */
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
 @media screen and (max-width:750px){
     .form-container .contact{
         width: 90%;
@@ -152,5 +206,14 @@
     .jobs-container h2{
         font-size: 1.7rem ;
         width: 95%;
+    }
+    .job-boxs .box .overview-box{
+        left: 3%;
+        width: 70vw;
+        height: 70vh;
+        overflow-y: scroll;
+    }
+    .job-boxs .box a{
+        padding: .8rem 1rem;
     }
 }

@@ -169,10 +169,10 @@ function sendEmail(){
 
   Email.send({
     Host : "smtp.elasticemail.com",
-    Username : "eslam01003733553@gmail.com",
-    Password : "29593BB1A7E0E15D7C5B17013266EC55FFF1",
-    To : 'eslam01003733553@gmail.com',
-    From : "eslam01003733553@gmail.com",
+    Username : "info@kasselsoft.com",
+    Password : "58F4B4F0C70A7FC7E792E14DEF93C4F07D63",
+    To : 'info@kasselsoft.com',
+    From : "info@kasselsoft.com",
     Subject : "KASSEL Website (Contact Us)",
     // Body : "and this is body"
     Body : bodyMessage

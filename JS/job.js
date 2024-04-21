@@ -17,24 +17,24 @@ function sendJobData(){
 
   Email.send({
     Host : "smtp.elasticemail.com",
-    Username : "eslam01003733553@gmail.com",
-    Password : "29593BB1A7E0E15D7C5B17013266EC55FFF1",
-    To : 'eslam01003733553@gmail.com',
-    From : "eslam01003733553@gmail.com",
+    Username : "jobs@kasselsoft.com",
+    Password : "7003B962AD36E45D99D399F50F26F7B482EF",
+    To : 'jobs@kasselsoft.com',
+    From : "jobs@kasselsoft.com",
     Subject : "KASSEL Website (Job Data)",
     // Body : "this is body"
     Body : bodyJobMessage
   }).then(
-    // message => {
-    //   if(message == "OK"){
-    //     Swal.fire({
-    //       title: "Success!",
-    //       text: "Data sent Successfully",
-    //       icon: "success"
-    //     });
-    //   }
-    // }
-    message => alert(message)
+    message => {
+      if(message == "OK"){
+        Swal.fire({
+          title: "Success!",
+          text: "Data sent Successfully",
+          icon: "success"
+        });
+      }
+    }
+    // message => alert(message)
   );
 }
 
@@ -78,3 +78,32 @@ jobForm.addEventListener("submit", (e) =>{
     return false;
   }
 })
+
+
+const openLinks = document.querySelectorAll('.open-link');
+const closeBtns = document.querySelectorAll('.close-btn');
+const boxes = document.querySelectorAll('.overview-box');
+
+function openBox(event) {
+  event.preventDefault(); // منع إعادة تحميل الصفحة
+  const box = event.target.closest('.box').querySelector('.overview-box');
+
+  box.style.opacity = '1';
+  box.style.display = 'block';
+  box.style.transition = 'all 1s ease-in-out';
+  box.style.top = '5%' ;// إظهار الصندوق
+  box.style.left = '5%' ;// إظهار الصندوق
+}
+
+function closeBox(event) {
+  const box = event.target.closest('.overview-box');
+   // إظهار الصندوق
+  box.style.opacity = '0'; 
+  box.style.display = "none";
+  box.style.transition = 'all 1s ease-in-out';
+  box.style.top = '50%'; // إظهار الصندوق
+  box.style.left = '45%';
+}
+
+// openLinks.forEach(link => link.addEventListener('click', openBox));
+// closeBtns.forEach(btn => btn.addEventListener('click', closeBox));
