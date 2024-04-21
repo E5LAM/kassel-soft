@@ -277,7 +277,7 @@ margin: auto 0px;
     }
     .contact-info .info-item p{
         font-size: .85rem;
-        
+        color: var(--blue);
     }
     .box{
         width: 90%;
