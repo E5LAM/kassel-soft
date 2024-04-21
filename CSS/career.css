@@ -202,6 +202,9 @@ body{
     .form-container .contact{
         width: 90%;
     }
+    .jobs-container {
+        margin-top:2.6rem;
+    }
     .data-container .heading h2{
         font-size: 2.2rem;
         margin-top: 4rem;
