@@ -89,19 +89,14 @@
 html,
 body {
 	overflow-x: hidden;
-    color: rgb(231, 231, 231);
-    /* cursor: none; */
+    color: var(--text-color);
 }
 
 body {
 	margin: 0;
 	background-color: var(--bg-color);
 	font-family:  sans-serif;
-    color: #F0F6FB;
-    color:  #F5FDFC;
-    color: #7392C3;
-    color: #647BA2;
-    color: #2B2C2C;
+    position: relative;
 }
 
 /* .section:nth-child(2){
@@ -1650,6 +1645,159 @@ h1 span {
 }
 
 
+                    /* Float Button  */
+
+.floating-container{
+    position: fixed;
+    width: 100px ;
+    height: 100px ;
+    bottom: 0;
+    right: 0;
+    margin: 35px 25px ;
+}
+
+.floating-button{
+    position: absolute;
+    width: 65px ;
+    height: 65px ;
+    background-color: var(--blue);
+    bottom: 0;
+    border-radius: 50%;
+    /* left: 0; */
+    right: 0;
+    color: white;
+    line-height: 65px ;
+    text-align: center;
+    font-size: 1.7rem ;
+    z-index: 100;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.back-top-button{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 35px 25px ;
+    width: 60px ;
+    height: 60px ;
+    background-color: var(--blue);
+    border-radius: 50%;
+    color: white;
+    line-height: 62px ;
+    text-align: center;
+    font-size: 1.7rem ;
+    z-index: 100;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.back-top-button a{
+    text-decoration: none;
+    color: white;
+}
+.element-container span{
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    width: 45px ;
+    height: 45px ;
+    margin: 0px 0;
+    color: white;
+    display: grid;
+    place-items: center;
+    z-index: -1;
+    opacity: 0;
+    cursor: pointer;
+    color: white;
+}
+.element-container span i{
+    color: white;
+    font-size: 1.3rem;
+}
+.element-container span:nth-child(1){
+    background-color: #1877F2;
+    translate: 0 -120%;
+    right: -60%;
+
+}
+.element-container span:nth-child(2){
+    
+    translate: 0 -220%;
+    right: 0%;
+
+}
+.element-container span:nth-child(3){
+    background-color: #E60023;
+    translate: 0 -290%;
+    right: 60%;
+
+}
+.element-container span:nth-child(4){
+    background-color: #000000;
+    translate: 0 -300%;
+    right: 105%;
+
+}
+.element-container span:nth-child(5){
+    background-color: 	#25D366;
+    translate: 0 -280%;
+    right: 130%;
+
+}
+
+@keyframes come-in{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        transform: translate(-60px ) scale(.4);
+    }
+    70%{
+        transform: translate(0) scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.floating-container .element-container-show span:nth-child(1){
+    animation: come-in .6s forwards .8s;
+    transition: all .6 linear;
+}
+.floating-container .element-container-show span:nth-child(2){
+    animation: come-in .6s forwards .65s;
+    transition: all .6 linear;
+}
+.floating-container .element-container-show span:nth-child(3){
+    animation: come-in .6s forwards .5s;
+    transition: all .6 linear;
+}
+.floating-container .element-container-show span:nth-child(4){
+    animation: come-in .6s forwards .35s;
+    transition: all .6 linear;
+}
+.floating-container .element-container-show span:nth-child(5){
+    animation: come-in .6s forwards .2s;
+    transition: all .6 linear;
+}
+
+.instagram{
+    background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color: white;
+}
+
+.whats{
+    background-color: #00cf4d;
+    color: white;
+ }
+
+
+
 
             /*///////////////  Responsive ////////////////*/
 
@@ -2250,6 +2398,55 @@ h1 span {
     }
     .footer .container-footer .contact-section .contact-item input{
         width: 70%;
+    }
+
+    .floating-container{
+       
+        margin: 25px 18px ;
+
+    }
+
+    .floating-button{
+        width: 55px ;
+        height: 55px ;
+        font-size: 1.5rem ;
+        line-height: 56px;
+    }
+
+    .back-top-button{
+        width: 50px ;
+        height: 50px ;
+        margin: 25px 18px ;
+        line-height: 52px ;
+        font-size: 1.5rem;
+    }
+    .element-container span{
+        width: 30px ;
+        height: 30px ;
+
+    }
+    .element-container span i{
+        font-size: .9rem ;
+    }
+    .element-container span:nth-child(1){
+        translate: 0 -25%;
+        right: -80%;
+    }
+    .element-container span:nth-child(2){
+        translate: 0 -110%;
+        right: -45%;
+    }
+    .element-container span:nth-child(3){
+        translate: 0 -190%;
+        right: -10%;
+    }
+    .element-container span:nth-child(4){
+        translate: 0 -200%;
+        right: 25%;
+    }
+    .element-container span:nth-child(5){
+        translate: 0 -180%;
+        right: 35%;
     }
 
 }
