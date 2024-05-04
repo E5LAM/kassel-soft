@@ -2401,9 +2401,10 @@ h1 span {
     }
 
     .floating-container{
-       
+       border: 1px solid red;
         margin: 25px 18px ;
-
+        height: 20px ;
+        width: 20px;
     }
 
     .floating-button{
@@ -2420,15 +2421,15 @@ h1 span {
         line-height: 52px ;
         font-size: 1.5rem;
     }
-    .element-container span{
+    .floating-container .element-container span{
         width: 30px ;
         height: 30px ;
 
     }
-    .element-container span i{
+    .floating-container .element-container span i{
         font-size: .9rem ;
     }
-    .element-container span:nth-child(1){
+    /* .floating-container .element-container span:nth-child(1){
         translate: 0 -25%;
         right: -80%;
     }
@@ -2439,14 +2440,30 @@ h1 span {
     .element-container span:nth-child(3){
         translate: 0 -190%;
         right: -10%;
+    } */
+    .floating-container .element-container span:nth-child(1){
+        translate: 0 -290%;
+        left: 30%;
+    }
+    .element-container span:nth-child(2){
+        translate: 0 -380%;
+        right: 150%;
+    }
+    .element-container span:nth-child(3){
+        translate: 0 -440%;
+        right: 350%;
     }
     .element-container span:nth-child(4){
-        translate: 0 -200%;
-        right: 25%;
+        translate: 0 -430%;
+        right: 430%;
     }
     .element-container span:nth-child(5){
+        translate: 0 -410%;
+        right: 470%;
+    }
+    /* .element-container span:nth-child(5){
         translate: 0 -180%;
         right: 35%;
-    }
+    } */
 
 }
