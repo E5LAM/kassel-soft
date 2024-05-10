@@ -1710,11 +1710,37 @@ h1 span {
     cursor: pointer;
     color: white;
 }
+.element-container-show span{
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    width: 45px ;
+    height: 45px ;
+    margin: 0px 0;
+    color: white;
+    display: grid;
+    place-items: center;
+    z-index: 10;
+    cursor: pointer;
+    color: white;
+    animation: come-in .6s forwards ;
+    transition: all .6 linear;
+}
 .element-container span i{
     color: white;
     font-size: 1.3rem;
 }
+.element-container-show span i{
+    color: white;
+    font-size: 1.3rem;
+}
 .element-container span:nth-child(1){
+    background-color: #1877F2;
+    translate: 0 -120%;
+    right: -60%;
+
+}
+.element-container-show span:nth-child(1){
     background-color: #1877F2;
     translate: 0 -120%;
     right: -60%;
@@ -1726,7 +1752,19 @@ h1 span {
     right: 0%;
 
 }
+.element-container-show span:nth-child(2){
+    
+    translate: 0 -220%;
+    right: 0%;
+
+}
 .element-container span:nth-child(3){
+    background-color: #E60023;
+    translate: 0 -290%;
+    right: 60%;
+
+}
+.element-container-show span:nth-child(3){
     background-color: #E60023;
     translate: 0 -290%;
     right: 60%;
@@ -1738,7 +1776,19 @@ h1 span {
     right: 105%;
 
 }
+.element-container-show span:nth-child(4){
+    background-color: #000000;
+    translate: 0 -300%;
+    right: 105%;
+
+}
 .element-container span:nth-child(5){
+    background-color: 	#25D366;
+    translate: 0 -280%;
+    right: 130%;
+
+}
+.element-container-show span:nth-child(5){
     background-color: 	#25D366;
     translate: 0 -280%;
     right: 130%;
@@ -2425,7 +2475,15 @@ h1 span {
         height: 30px ;
 
     }
+    .floating-container .element-container-show span{
+        width: 30px ;
+        height: 30px ;
+
+    }
     .floating-container .element-container span i{
+        font-size: .9rem ;
+    }
+    .floating-container .element-container-show span i{
         font-size: .9rem ;
     }
     /* .floating-container .element-container span:nth-child(1){
@@ -2444,7 +2502,15 @@ h1 span {
         translate: 0 -290%;
         left: 30%;
     }
+    .floating-container .element-container-show span:nth-child(1){
+        translate: 0 -290%;
+        left: 30%;
+    }
     .element-container span:nth-child(2){
+        translate: 0 -380%;
+        right: 150%;
+    }
+    .element-container-show span:nth-child(2){
         translate: 0 -380%;
         right: 150%;
     }
@@ -2452,7 +2518,15 @@ h1 span {
         translate: 0 -440%;
         right: 350%;
     }
+    .element-container-show span:nth-child(3){
+        translate: 0 -440%;
+        right: 350%;
+    }
     .element-container span:nth-child(4){
+        translate: 0 -430%;
+        right: 430%;
+    }
+    .element-container-show span:nth-child(4){
         translate: 0 -430%;
         right: 430%;
     }
@@ -2460,9 +2534,9 @@ h1 span {
         translate: 0 -410%;
         right: 470%;
     }
-    /* .element-container span:nth-child(5){
-        translate: 0 -180%;
-        right: 35%;
-    } */
+    .element-container-show span:nth-child(5){
+        translate: 0 -410%;
+        right: 470%;
+    }
 
 }
