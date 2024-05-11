@@ -1,0 +1,8 @@
+@media (min-width: 1200px) {
+  .container .animation {
+    left: 12%;
+  }
+  .contanet {
+    margin-right: 100px;
+  }
+}

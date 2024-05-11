@@ -1,634 +1,584 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Terms & Conditions | KASSEL SOFT</title>
-        <!-- font awesome icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-        <!-- title tag logo -->
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- title tag logo -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
 
-            <!-- CSS Files -->
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/support.css">
-
-</head>
-<body>
-    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/support.css" />
+  </head>
+  <body>
     <div class="section">
-        <div class="navbar" id="top">
-
-            <div class="animation-box">
-                <div class="nav-logo">
-                    <a href="index.html">KASSEL</a>
-                </div>
-                <!-- <span class="jet"></span> -->
-            </div>
-
-            
-            <nav class="menu" id="nav">
-                
-                    <span class="nav-item ">
-                        <a href="index.html" data-i18n="home">Home</a>
-                    </span>
-
-                    <span class="nav-item">
-                        <a href="about-us.html" data-i18n="about">about us</a>
-                    </span>
-                <span class="nav-item">
-                    <a href="services.html" data-i18n="services">services</a>
-                </span>
-                <span class="nav-item">
-                    <a href="career.html" data-i18n="career">career</a>
-                </span>
-                <span class="nav-item">
-                    <a href="contact.html" data-i18n="contact">contact us</a>
-                </span>
-            </nav>
-
-            
-            <div class="language-button">
-                <select name="" id="select">
-                    <option value="en" selected>ENG</option>
-                    <option value="ar">ARB</option>
-                </select>
-            </div>
-            <input type="checkbox" id="check" >
-            <label for="#check" class="nav-icon ">
-                <i class="fa-solid fa-bars" id="menu-icon" onclick="hideSlider()"></i>
-                <i class="fa-solid fa-x" id="close-icon" onclick="showSlider()"></i>
-            </label>
+      <div class="navbar" id="top">
+        <div class="animation-box">
+          <div class="nav-logo">
+            <a href="index.html">KASSEL</a>
+          </div>
+          <!-- <span class="jet"></span> -->
         </div>
-         <div class="nav-toggle">
-            <a href="index.html">
-                home
-            </a>
-            <a href="about-us.html">
-                about us
-            </a>
-            <a href="services.html">
-                services
-            </a>
-            <a href="career.html">
-                career
-            </a>
-            <a href="contact.html">
-                contact us
-            </a>
-         </div>
+
+        <nav class="menu" id="nav">
+          <span class="nav-item">
+            <a href="index.html" data-i18n="home">Home</a>
+          </span>
+
+          <span class="nav-item">
+            <a href="about-us.html" data-i18n="about">about us</a>
+          </span>
+          <span class="nav-item">
+            <a href="services.html" data-i18n="services">services</a>
+          </span>
+          <span class="nav-item">
+            <a href="career.html" data-i18n="career">career</a>
+          </span>
+          <span class="nav-item">
+            <a href="contact.html" data-i18n="contact">contact us</a>
+          </span>
+        </nav>
+
+        <div class="language-button dropdown">
+          <button onclick="toggleDropdown()" class="dropbtn" id="languageBtn">
+            <span id="languageText">ENG</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="conditions.html" onclick="changeLanguage('ENG')">ENG</a>
+            <a href="conditionsAR.html" onclick="changeLanguage('ARB')">ARB</a>
+          </div>
+        </div>
+
+        <input type="checkbox" id="check" />
+        <label for="#check" class="nav-icon">
+          <i class="fa-solid fa-bars" id="menu-icon" onclick="hideSlider()"></i>
+          <i class="fa-solid fa-x" id="close-icon" onclick="showSlider()"></i>
+        </label>
+      </div>
+      <div class="nav-toggle">
+        <a href="index.html"> home </a>
+        <a href="about-us.html"> about us </a>
+        <a href="services.html"> services </a>
+        <a href="career.html"> career </a>
+        <a href="contact.html"> contact us </a>
+      </div>
     </div>
 
     <div class="support-container">
-    <p>Terms and Conditions</p>
-    <p>Last updated: February 13, 2024</p>
+      <p>Terms and Conditions</p>
+      <p>Last updated: February 13, 2024</p>
 
-    <p>
-        Please read these terms and conditions carefully before using Our Service.
-    </p>
+      <p>
+        Please read these terms and conditions carefully before using Our
+        Service.
+      </p>
 
-    <h2 class="support-heading">
-        Interpretation and Definitions
-    </h2>
+      <h2 class="support-heading">Interpretation and Definitions</h2>
 
-    <h4 >
-        Interpretation
-    </h4>
+      <h4>Interpretation</h4>
 
-    <p>
-        The words of which the initial letter is capitalized have meanings defined under the
-following conditions. The following definitions shall have the same meaning regardless of
-whether they appear in singular or in plural.
-    </p>
+      <p>
+        The words of which the initial letter is capitalized have meanings
+        defined under the following conditions. The following definitions shall
+        have the same meaning regardless of whether they appear in singular or
+        in plural.
+      </p>
 
-    <h4>
-        Definitions
-    </h4>
-    <p>
-        For the purposes of these Terms and Conditions:
-    </p>
+      <h4>Definitions</h4>
+      <p>For the purposes of these Terms and Conditions:</p>
 
-    <p class="padding">
-        <b>Affiliate</b> means an entity that controls, is controlled by or is under common control
-with a party, where "control" means ownership of 50% or more of the shares, equity
-interest or other securities entitled to vote for election of directors or other
-managing authority.
-        <br>
+      <p class="padding">
+        <b>Affiliate</b> means an entity that controls, is controlled by or is
+        under common control with a party, where "control" means ownership of
+        50% or more of the shares, equity interest or other securities entitled
+        to vote for election of directors or other managing authority.
+        <br />
         <b>Country </b>refers to: Jordan
-        <br>
-        <b>Company</b> (referred to as either "the Company", "We", "Us" or "Our" in this
-Agreement) refers to kassel, Queen Rania Street, Amman, Jordan.
-        <br>
-        <b>Device</b> means any device that can access the Service such as a computer, a
-cellphone or a digital tablet.
-        <br>
+        <br />
+        <b>Company</b> (referred to as either "the Company", "We", "Us" or "Our"
+        in this Agreement) refers to kassel, Queen Rania Street, Amman, Jordan.
+        <br />
+        <b>Device</b> means any device that can access the Service such as a
+        computer, a cellphone or a digital tablet.
+        <br />
 
         <b>Service</b> refers to the Website.
-        <br>
-        <b>Terms and Conditions</b> (also referred as "Terms") mean these Terms and
-Conditions that form the entire agreement between You and the Company regarding
-the use of the Service. This Terms and Conditions agreement has been created with
-the help of the Terms and Conditions Generator.
+        <br />
+        <b>Terms and Conditions</b> (also referred as "Terms") mean these Terms
+        and Conditions that form the entire agreement between You and the
+        Company regarding the use of the Service. This Terms and Conditions
+        agreement has been created with the help of the Terms and Conditions
+        Generator.
 
-        <br>
-        <b>Third-party Social Media Service</b> means any services or content (including data,
-information, products or services) provided by a third-party that may be displayed,
-included or made available by the Service.
+        <br />
+        <b>Third-party Social Media Service</b> means any services or content
+        (including data, information, products or services) provided by a
+        third-party that may be displayed, included or made available by the
+        Service.
 
-        <br>
+        <br />
 
-        <b>Website</b> refers to kassel, accessible from https://www.kasselsoft.com
+        <b>Website</b> refers to kassel, accessible from
+        https://www.kasselsoft.com
 
-        <br>
-        <b>You</b> means the individual accessing or using the Service, or the company, or other
-legal entity on behalf of which such individual is accessing or using the Service, as
-applicable.
-    </p>
+        <br />
+        <b>You</b> means the individual accessing or using the Service, or the
+        company, or other legal entity on behalf of which such individual is
+        accessing or using the Service, as applicable.
+      </p>
 
-    <h4>
-        Acknowledgment
-    </h4>
-    <p>
-        These are the Terms and Conditions governing the use of this Service and the agreement
-that operates between You and the Company. These Terms and Conditions set out the rights
-and obligations of all users regarding the use of the Service.
-    </p>
+      <h4>Acknowledgment</h4>
+      <p>
+        These are the Terms and Conditions governing the use of this Service and
+        the agreement that operates between You and the Company. These Terms and
+        Conditions set out the rights and obligations of all users regarding the
+        use of the Service.
+      </p>
 
-    <p>
-        Your access to and use of the Service is conditioned on Your acceptance of and compliance
-with these Terms and Conditions. These Terms and Conditions apply to all visitors, users
-and others who access or use the Service.
-    </p>
+      <p>
+        Your access to and use of the Service is conditioned on Your acceptance
+        of and compliance with these Terms and Conditions. These Terms and
+        Conditions apply to all visitors, users and others who access or use the
+        Service.
+      </p>
 
-    <p>
-        By accessing or using the Service You agree to be bound by these Terms and Conditions. If
-You disagree with any part of these Terms and Conditions then You may not access the
-Service.
-    </p>
+      <p>
+        By accessing or using the Service You agree to be bound by these Terms
+        and Conditions. If You disagree with any part of these Terms and
+        Conditions then You may not access the Service.
+      </p>
 
-    <p>
-        You represent that you are over the age of 18. The Company does not permit those under 18
-to use the Service.
-    </p>
+      <p>
+        You represent that you are over the age of 18. The Company does not
+        permit those under 18 to use the Service.
+      </p>
 
-    <p>
-        Your access to and use of the Service is also conditioned on Your acceptance of and
-compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our
-policies and procedures on the collection, use and disclosure of Your personal information
-when You use the Application or the Website and tells You about Your privacy rights and
-how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
-    </p>
+      <p>
+        Your access to and use of the Service is also conditioned on Your
+        acceptance of and compliance with the Privacy Policy of the Company. Our
+        Privacy Policy describes Our policies and procedures on the collection,
+        use and disclosure of Your personal information when You use the
+        Application or the Website and tells You about Your privacy rights and
+        how the law protects You. Please read Our Privacy Policy carefully
+        before using Our Service.
+      </p>
 
-    <h4>
-        Links to Other Websites
-    </h4>
+      <h4>Links to Other Websites</h4>
 
-    <p>
-        Our Service may contain links to third-party web sites or services that are not owned or
-controlled by the Company.
-    </p>
+      <p>
+        Our Service may contain links to third-party web sites or services that
+        are not owned or controlled by the Company.
+      </p>
 
-    <p>
-        The Company has no control over, and assumes no responsibility for, the content, privacy
-policies, or practices of any third party web sites or services. You further acknowledge and
-agree that the Company shall not be responsible or liable, directly or indirectly, for any
-damage or loss caused or alleged to be caused by or in connection with the use of or
-reliance on any such content, goods or services available on or through any such web sites
-or services.
+      <p>
+        The Company has no control over, and assumes no responsibility for, the
+        content, privacy policies, or practices of any third party web sites or
+        services. You further acknowledge and agree that the Company shall not
+        be responsible or liable, directly or indirectly, for any damage or loss
+        caused or alleged to be caused by or in connection with the use of or
+        reliance on any such content, goods or services available on or through
+        any such web sites or services.
+      </p>
 
-    </p>
+      <p>
+        We strongly advise You to read the terms and conditions and privacy
+        policies of any thirdparty web sites or services that You visit.
+      </p>
 
-    <p>
-        We strongly advise You to read the terms and conditions and privacy policies of any thirdparty web sites or services that You visit.
+      <h4>Termination</h4>
+      <p>
+        We may terminate or suspend Your access immediately, without prior
+        notice or liability, for any reason whatsoever, including without
+        limitation if You breach these Terms and Conditions.
+      </p>
 
-    </p>
-
-    <h4>
-        Termination
-    </h4>
-    <p>
-        We may terminate or suspend Your access immediately, without prior notice or liability, for
-any reason whatsoever, including without limitation if You breach these Terms and
-Conditions.
-    </p>
-
-    <p>
+      <p>
         Upon termination, Your right to use the Service will cease immediately.
+      </p>
 
-    </p>
+      <h4>Limitation of Liability</h4>
 
+      <p>
+        Notwithstanding any damages that You might incur, the entire liability
+        of the Company and any of its suppliers under any provision of this
+        Terms and Your exclusive remedy for all of the foregoing shall be
+        limited to the amount actually paid by You through the Service or 100
+        USD if You haven't purchased anything through the Service.
+      </p>
 
-    <h4>
-        Limitation of Liability
+      <p>
+        To the maximum extent permitted by applicable law, in no event shall the
+        Company or its suppliers be liable for any special, incidental,
+        indirect, or consequential damages whatsoever (including, but not
+        limited to, damages for loss of profits, loss of data or other
+        information, for business interruption, for personal injury, loss of
+        privacy arising out of or in any way related to the use of or inability
+        to use the Service, third-party software and/or third-party hardware
+        used with the Service, or otherwise in connection with any provision of
+        this Terms), even if the Company or any supplier has been advised of the
+        possibility of such damages and even if the remedy fails of its
+        essential purpose.
+      </p>
 
-    </h4>
+      <p>
+        Some states do not allow the exclusion of implied warranties or
+        limitation of liability for incidental or consequential damages, which
+        means that some of the above limitations may not apply. In these states,
+        each party's liability will be limited to the greatest extent permitted
+        by law.
+      </p>
 
-    <p>
-        Notwithstanding any damages that You might incur, the entire liability of the Company and
-any of its suppliers under any provision of this Terms and Your exclusive remedy for all of
-the foregoing shall be limited to the amount actually paid by You through the Service or 100
-USD if You haven't purchased anything through the Service.
+      <h4>"AS IS" and "AS AVAILABLE" Disclaimer</h4>
 
-    </p>
+      <p>
+        The Service is provided to You "AS IS" and "AS AVAILABLE" and with all
+        faults and defects without warranty of any kind. To the maximum extent
+        permitted under applicable law, the Company, on its own behalf and on
+        behalf of its Affiliates and its and their respective licensors and
+        service providers, expressly disclaims all warranties, whether express,
+        implied, statutory or otherwise, with respect to the Service, including
+        all implied warranties of merchantability, fitness for a particular
+        purpose, title and non-infringement, and warranties that may arise out
+        of course of dealing, course of performance, usage or trade practice.
+        Without limitation to the foregoing, the Company provides no warranty or
+        undertaking, and makes no representation of any kind that the Service
+        will meet Your requirements, achieve any intended results, be compatible
+        or work with any other software, applications, systems or services,
+        operate without interruption, meet any performance or reliability
+        standards or be error free or that any errors or defects can or will be
+        corrected.
+      </p>
 
-    <p>
-        To the maximum extent permitted by applicable law, in no event shall the Company or its
-suppliers be liable for any special, incidental, indirect, or consequential damages
-whatsoever (including, but not limited to, damages for loss of profits, loss of data or other
-information, for business interruption, for personal injury, loss of privacy arising out of or
-in any way related to the use of or inability to use the Service, third-party software and/or
-third-party hardware used with the Service, or otherwise in connection with any provision
-of this Terms), even if the Company or any supplier has been advised of the possibility of
-such damages and even if the remedy fails of its essential purpose.
+      <p>
+        Without limiting the foregoing, neither the Company nor any of the
+        company's provider makes any representation or warranty of any kind,
+        express or implied: (i) as to the operation or availability of the
+        Service, or the information, content, and materials or products included
+        thereon; (ii) that the Service will be uninterrupted or error-free;
+        (iii) as to the accuracy, reliability, or currency of any information or
+        content provided through the Service; or (iv) that the Service, its
+        servers, the content, or e-mails sent from or on behalf of the Company
+        are free of viruses, scripts, trojan horses, worms, malware, timebombs
+        or other harmful components.
+      </p>
 
-    </p>
+      <p>
+        Some jurisdictions do not allow the exclusion of certain types of
+        warranties or limitations on applicable statutory rights of a consumer,
+        so some or all of the above exclusions and limitations may not apply to
+        You. But in such a case the exclusions and limitations set forth in this
+        section shall be applied to the greatest extent enforceable under
+        applicable law.
+      </p>
 
-    <p>
-        Some states do not allow the exclusion of implied warranties or limitation of liability for
-incidental or consequential damages, which means that some of the above limitations may
-not apply. In these states, each party's liability will be limited to the greatest extent
-permitted by law.
+      <h4>Governing Law</h4>
+      <p>
+        The laws of the Country, excluding its conflicts of law rules, shall
+        govern this Terms and Your use of the Service. Your use of the
+        Application may also be subject to other local, state, national, or
+        international laws.
+      </p>
 
-    </p>
+      <h4>Disputes Resolution</h4>
+      <p>
+        If You have any concern or dispute about the Service, You agree to first
+        try to resolve the dispute informally by contacting the Company.
+      </p>
 
-    <h4>
-        "AS IS" and "AS AVAILABLE" Disclaimer
-    </h4>
+      <h4>For European Union (EU) Users</h4>
+      <p>
+        If You are a European Union consumer, you will benefit from any
+        mandatory provisions of the law of the country in which You are
+        resident.
+      </p>
 
-    <p>
-        The Service is provided to You "AS IS" and "AS AVAILABLE" and with all faults and defects
-without warranty of any kind. To the maximum extent permitted under applicable law, the
-Company, on its own behalf and on behalf of its Affiliates and its and their respective
-licensors and service providers, expressly disclaims all warranties, whether express,
-implied, statutory or otherwise, with respect to the Service, including all implied warranties
-of merchantability, fitness for a particular purpose, title and non-infringement, and
-warranties that may arise out of course of dealing, course of performance, usage or trade
-practice. Without limitation to the foregoing, the Company provides no warranty or
-undertaking, and makes no representation of any kind that the Service will meet Your
-requirements, achieve any intended results, be compatible or work with any other software,
-applications, systems or services, operate without interruption, meet any performance or
-reliability standards or be error free or that any errors or defects can or will be corrected.
+      <h4>United States Legal Compliance</h4>
+      <p>
+        You represent and warrant that (i) You are not located in a country that
+        is subject to the United States government embargo, or that has been
+        designated by the United States government as a "terrorist supporting"
+        country, and (ii) You are not listed on any United States government
+        list of prohibited or restricted parties.
+      </p>
 
-    </p>
+      <h4 style="margin: 3rem 0">Severability and Waiver</h4>
 
-    <p>
-        Without limiting the foregoing, neither the Company nor any of the company's provider
-makes any representation or warranty of any kind, express or implied: (i) as to the
-operation or availability of the Service, or the information, content, and materials or
-products included thereon; (ii) that the Service will be uninterrupted or error-free; (iii) as
-to the accuracy, reliability, or currency of any information or content provided through the
-Service; or (iv) that the Service, its servers, the content, or e-mails sent from or on behalf of
-the Company are free of viruses, scripts, trojan horses, worms, malware, timebombs or
-other harmful components.
+      <h4>Severability</h4>
+      <p>
+        If any provision of these Terms is held to be unenforceable or invalid,
+        such provision will be changed and interpreted to accomplish the
+        objectives of such provision to the greatest extent possible under
+        applicable law and the remaining provisions will continue in full force
+        and effect.
+      </p>
 
-    </p>
+      <h4>Waiver</h4>
+      <p>
+        Except as provided herein, the failure to exercise a right or to require
+        performance of an obligation under these Terms shall not affect a
+        party's ability to exercise such right or require such performance at
+        any time thereafter nor shall the waiver of a breach constitute a waiver
+        of any subsequent breach.
+      </p>
 
-    <p>
-        Some jurisdictions do not allow the exclusion of certain types of warranties or limitations
-on applicable statutory rights of a consumer, so some or all of the above exclusions and
-limitations may not apply to You. But in such a case the exclusions and limitations set forth
-in this section shall be applied to the greatest extent enforceable under applicable law.
+      <h4>Translation Interpretation</h4>
+      <p>
+        These Terms and Conditions may have been translated if We have made them
+        available to You on our Service. You agree that the original English
+        text shall prevail in the case of a dispute.
+      </p>
 
-    </p>
+      <h4>Changes to These Terms and Conditions</h4>
+      <p>
+        We reserve the right, at Our sole discretion, to modify or replace these
+        Terms at any time. If a revision is material We will make reasonable
+        efforts to provide at least 30 days' notice prior to any new terms
+        taking effect. What constitutes a material change will be determined at
+        Our sole discretion.
+      </p>
+      <p>
+        By continuing to access or use Our Service after those revisions become
+        effective, You agree to be bound by the revised terms. If You do not
+        agree to the new terms, in whole or in part, please stop using the
+        website and the Service.
+      </p>
 
+      <h4>Contact Us</h4>
+      <p>
+        If you have any questions about these Terms and Conditions, You can
+        contact us:
+      </p>
+      <p class="padding">
+        By email: kasselsoft@kasselsoft.com <br />
+        By visiting this page on our website: https://www.kasselsoft.com/contact
+        us
+        <br />
+        By phone number: +962 790039555
+      </p>
+    </div>
 
-    
-
-    <h4>
-        Governing Law
-
-    </h4>
-    <p>
-        The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and
-Your use of the Service. Your use of the Application may also be subject to other local, state,
-national, or international laws.
-    </p>
-
-
-    <h4>
-        Disputes Resolution
-
-    </h4>
-    <p>
-        If You have any concern or dispute about the Service, You agree to first try to resolve the
-        dispute informally by contacting the Company.
-        
-    </p>
-
-
-    <h4>
-        For European Union (EU) Users
-    </h4>
-    <p>
-        If You are a European Union consumer, you will benefit from any mandatory provisions of
-the law of the country in which You are resident.
-    </p>
-
-
-    <h4>
-        United States Legal Compliance
-
-    </h4>
-    <p>
-        You represent and warrant that (i) You are not located in a country that is subject to the
-United States government embargo, or that has been designated by the United States
-government as a "terrorist supporting" country, and (ii) You are not listed on any United
-States government list of prohibited or restricted parties.
-
-    </p>
-
-    <h4 style="margin: 3rem 0;">
-        Severability and Waiver
-
-    </h4>
-
-
-    
-
-    <h4>
-        Severability
-    </h4>
-    <p>
-        If any provision of these Terms is held to be unenforceable or invalid, such provision will be
-changed and interpreted to accomplish the objectives of such provision to the greatest
-extent possible under applicable law and the remaining provisions will continue in full force
-and effect.
-    </p>
-
-
-    <h4>
-        Waiver
-    </h4>
-    <p>
-        Except as provided herein, the failure to exercise a right or to require performance of an
-obligation under these Terms shall not affect a party's ability to exercise such right or
-require such performance at any time thereafter nor shall the waiver of a breach constitute
-a waiver of any subsequent breach.
-    </p>
-
-
-    <h4>
-        Translation Interpretation
-
-    </h4>
-    <p>
-        These Terms and Conditions may have been translated if We have made them available to
-You on our Service. You agree that the original English text shall prevail in the case of a
-dispute.
-    </p>
-
-
-    <h4>
-        Changes to These Terms and Conditions
-    </h4>
-    <p>
-        We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If
-a revision is material We will make reasonable efforts to provide at least 30 days' notice
-prior to any new terms taking effect. What constitutes a material change will be determined
-at Our sole discretion.
-
-    </p>
-    <p>
-        By continuing to access or use Our Service after those revisions become effective, You agree
-to be bound by the revised terms. If You do not agree to the new terms, in whole or in part,
-please stop using the website and the Service.
-
-    </p>
-
-    <h4>
-        Contact Us
-
-    </h4>
-    <p>
-        If you have any questions about these Terms and Conditions, You can contact us:
-    </p>
-    <p class="padding">
-        By email: kasselsoft@kasselsoft.com <br>
-By visiting this page on our website: https://www.kasselsoft.com/contact us
-<br>
-By phone number: +962 790039555 
-    </p>
-
-</div>
-
-
-                <!--------------- FOOTER -------->
+    <!--------------- FOOTER -------->
 
     <div class="section footer">
-        <div class="container-footer ">
+      <div class="container-footer">
+        <div class="contact-section">
+          <div class="contact-item name">
+            <a href="index.html">KASSEL</a>
+          </div>
+          <div class="contact-item">
+            <p>
+              rapid and maintainabie product development bring your startup idea
+              to life, or solve a business problem
+            </p>
+          </div>
 
-            <div class="contact-section">
-                <div class="contact-item name">
-                    <a href="index.html">KASSEL</a>
-                </div>
-                <div class="contact-item">
-                    <p>
-                        rapid and maintainabie product development bring your startup idea to life, or solve a business problem 
-
-                    </p>
-                </div>
-                
-                <!-- <div class="contact-item">
+          <!-- <div class="contact-item">
                     <input type="email" placeholder="E-mail">
                     <button type="submit"></button>
                 </div> -->
 
-                <div class="contact-item">
-                    <form action="#" id="footer-form" >
-                        <div class="input-field field">
-                            <input type="email" placeholder="E-mail" id="footer-email"
-                            class="f-item" autocomplete="off">
-                            <div class="error-txt">
-                                E-mail Address can't be blank
-                            </div>
-                        </div>
-                        <button type="submit" >Send  Email</button>
-                    </form>
-                </div>
+          <div class="contact-item">
+            <form action="#" id="footer-form">
+              <div class="input-field field">
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  id="footer-email"
+                  class="f-item"
+                  autocomplete="off"
+                />
+                <div class="error-txt">E-mail Address can't be blank</div>
+              </div>
+              <button type="submit">Send Email</button>
+            </form>
+          </div>
 
-                <div class="contact-item">
+          <div class="contact-item">
+            <h4>follow us</h4>
 
-                    <h4>follow us</h4>
-
-                    <a href="https://www.facebook.com/profile.php?id=61555183182719&mib
+            <a
+              href="https://www.facebook.com/profile.php?id=61555183182719&mib
                         extid=PlNXYD
-                        " target="_blank">
-                            <div class="iconDiv">
-                                <i class="fa-brands fa-facebook-f icon" ></i>
-                            </div>
-                        </a>
-          
-                        <a href="https://www.instagram.com/_kassel_?igsh=cTY1dmtxd29nODF3&u
+                        "
+              target="_blank"
+            >
+              <div class="iconDiv">
+                <i class="fa-brands fa-facebook-f icon"></i>
+              </div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/_kassel_?igsh=cTY1dmtxd29nODF3&u
                         tm_source=qr
-                        " target="_blank">
-                        <div class="iconDiv">
-                            <i class="fa-brands fa-instagram icon"></i>
-                        </div>
-                        </a>
-          
-                        <a href="https://pin.it/6CI41cw0A" target="_blank">
-                            <div class="iconDiv">
-                                <i class="fa-brands fa-pinterest-p icon"></i>
-                            </div>
-                        </a>
-          
-                        <a href="https://x.com/kasselsoft/status/1751659476862537793?s=20" target="_blank">
-                            <div class="iconDiv">
-                                <i class="fa-brands fa-x-twitter icon"></i>
-                            </div>
-                        </a>
+                        "
+              target="_blank"
+            >
+              <div class="iconDiv">
+                <i class="fa-brands fa-instagram icon"></i>
+              </div>
+            </a>
 
-                        <a href="https://wa.me/message/74Q6F22FDGNYN1" target="_blank">
-                            <div class="iconDiv">
-                                <i class="fa-brands fa-whatsapp icon"></i>
-                            </div>
-                        </a>
-                </div>
+            <a href="https://pin.it/6CI41cw0A" target="_blank">
+              <div class="iconDiv">
+                <i class="fa-brands fa-pinterest-p icon"></i>
+              </div>
+            </a>
 
-            </div>
+            <a
+              href="https://x.com/kasselsoft/status/1751659476862537793?s=20"
+              target="_blank"
+            >
+              <div class="iconDiv">
+                <i class="fa-brands fa-x-twitter icon"></i>
+              </div>
+            </a>
 
-
-            <div class="nav-section">
-                
-                <div class="nav-heading">
-                    <h3 class="">
-                        Company
-                    </h3>
-                </div>
-                <div class="nav-link">
-                    <a href="about-us.html">
-                        about us
-                    </a>
-                </div>
-                
-                <div class="nav-link">
-                    <a href="services.html">
-                        Services
-                    </a>
-                </div>
-                <div class="nav-link">
-                    <a href="career.html">
-                        Career
-                    </a>
-                </div>
-             
-
-            </div>
-
-            <div class="support-section">
-                <div class="support-heading">
-                    <h3 class="">support</h3>
-                </div>
-
-                <div class="support-link">
-                    <a href="conditions.html" target="_blank">
-                        terms & conditions
-                    </a>
-                </div>
-
-                <div class="support-link">
-                    <a href="privacy.html" target="_blank">
-                        privacy policy
-                    </a>
-                </div>
-
-                <div class="support-link">
-                    <a href="contact.html">
-                        contact us
-                    </a>
-                </div>
-            </div>
-
-            <div class="location-section">
-                <div class="location-heading">
-                    <h3 class="">
-                        get in touch
-                    </h3>
-                </div>
-
-                <div class="location-item">
-                    <i class="fa-solid fa-globe"></i>
-                    <p>
-                        http://www.kasselsoft.com 
-                    </p>
-                </div>
-
-                <div class="location-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>
-                        kasselsoft@kasselsoft.com
-                    </p>
-                </div>
-
-                <div class="location-item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>
-                        Queen Rania Street
-                    </p>
-                </div>
-
-            </div>
-
+            <a href="https://wa.me/message/74Q6F22FDGNYN1" target="_blank">
+              <div class="iconDiv">
+                <i class="fa-brands fa-whatsapp icon"></i>
+              </div>
+            </a>
+          </div>
         </div>
+
+        <div class="nav-section">
+          <div class="nav-heading">
+            <h3 class="">Company</h3>
+          </div>
+          <div class="nav-link">
+            <a href="about-us.html"> about us </a>
+          </div>
+
+          <div class="nav-link">
+            <a href="services.html"> Services </a>
+          </div>
+          <div class="nav-link">
+            <a href="career.html"> Career </a>
+          </div>
+        </div>
+
+        <div class="support-section">
+          <div class="support-heading">
+            <h3 class="">support</h3>
+          </div>
+
+          <div class="support-link">
+            <a href="conditions.html" target="_blank"> terms & conditions </a>
+          </div>
+
+          <div class="support-link">
+            <a href="privacy.html" target="_blank"> privacy policy </a>
+          </div>
+
+          <div class="support-link">
+            <a href="contact.html"> contact us </a>
+          </div>
+        </div>
+
+        <div class="location-section">
+          <div class="location-heading">
+            <h3 class="">get in touch</h3>
+          </div>
+
+          <div class="location-item">
+            <i class="fa-solid fa-globe"></i>
+            <p>http://www.kasselsoft.com</p>
+          </div>
+
+          <div class="location-item">
+            <i class="fa-solid fa-envelope"></i>
+            <p>kasselsoft@kasselsoft.com</p>
+          </div>
+
+          <div class="location-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Queen Rania Street</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    
-                <!-- Float Button  -->
+    <!-- Float Button  -->
     <div class="floating-container">
-        <div class="floating-button" id="floating-button">
-            <i class="fa-solid fa-headset"></i>
-        </div>
+      <div class="floating-button" id="floating-button">
+        <i class="fa-solid fa-headset"></i>
+      </div>
 
-        <div class="element-container" id="element-container">
-            <span>
-                <a href="
+      <div class="element-container" id="element-container">
+        <span>
+          <a
+            href="
                 https://www.facebook.com/profile.php?id=61555183182719&mib
-                        extid=PlNXYD" target="_blank">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-            </span>
-            <span class="instagram">
-                <a href="
+                        extid=PlNXYD"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </span>
+        <span class="instagram">
+          <a
+            href="
                 https://www.instagram.com/_kassel_?igsh=cTY1dmtxd29nODF3&u
-                        tm_source=qr" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </span>
-            <span>
-                <a href="https://pin.it/6CI41cw0A
-                " target="_blank">
-                    <i class="fa-brands fa-pinterest-p"></i>
-                </a>
-            </span>
-            <span>
-                <a href="https://x.com/kasselsoft/status/1751659476862537793?s=20
-                " target="_blank">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-            </span>
-            <span>
-                <a href="https://wa.me/message/74Q6F22FDGNYN1
-                " target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-            </span>
-        </div>
+                        tm_source=qr"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </span>
+        <span>
+          <a
+            href="https://pin.it/6CI41cw0A
+                "
+            target="_blank"
+          >
+            <i class="fa-brands fa-pinterest-p"></i>
+          </a>
+        </span>
+        <span>
+          <a
+            href="https://x.com/kasselsoft/status/1751659476862537793?s=20
+                "
+            target="_blank"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </span>
+        <span>
+          <a
+            href="https://wa.me/message/74Q6F22FDGNYN1
+                "
+            target="_blank"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </span>
+      </div>
     </div>
-      
-                <!-- Back to Top Button  -->
+
+    <!-- Back to Top Button  -->
 
     <div class="back-top-button">
-        <a href="#top">
-            <i class="fa-solid fa-chevron-up"></i>
-        </a>
+      <a href="#top">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
     </div>
-    
+
     <div class="cursor"></div>
     <div class="cursor2"></div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="JS/script.js"></script>
     <script src="JS/float-button.js"></script>
-</body>
+  </body>
 </html>

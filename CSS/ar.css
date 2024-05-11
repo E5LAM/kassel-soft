@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  text-align: end;
+}
+.iconDiv {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.location-section {
+  margin-right: 20px;
+}
