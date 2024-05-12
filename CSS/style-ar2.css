@@ -39,7 +39,8 @@
   text-decoration: none;
 }
 .title-kassel {
-  margin: 10px 15px 50px;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 .form .footer-btn {
   font-size: 1rem;
@@ -250,6 +251,12 @@
   padding: 0;
   margin: 0;
 }
+.section {
+  height: auto;
+}
+.company-title {
+  width: 25%;
+}
 
 @media (max-width: 992px) {
   .foot {
@@ -268,7 +275,23 @@
   .company-title ul li a {
     padding: 0;
   }
+  .company-title {
+    width: 100%;
+  }
+  .title-res {
+    width: 100%;
+  }
 }
-.section {
-  height: auto;
+
+@media screen and (max-width: 768px) {
+  .footer-social h4 {
+    display: none;
+  }
+  .form .footer-input {
+    width: 150px;
+  }
+  .form .footer-btn {
+    font-size: 16px;
+    padding: 0.5rem 0.75rem;
+  }
 }
