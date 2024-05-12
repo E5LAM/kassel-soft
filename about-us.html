@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | KASSEL SOFT</title>
+    <title>Kassel soft | About Us</title>
     <!-- font awesome icons -->
     <link
       rel="stylesheet"
@@ -12,7 +12,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!--google-font-->
     <!-- title tag logo -->
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
 
@@ -20,7 +27,7 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/about.css" />
   </head>
-  <body>
+  <body class="cairo-uniquifier">
     <div class="section" id="top">
       <div class="navbar">
         <div class="animation-box">
@@ -51,12 +58,12 @@
 
         <div class="language-button dropdown">
           <button onclick="toggleDropdown()" class="dropbtn" id="languageBtn">
-            <span id="languageText">ENG</span>
-            <i class="fa-solid fa-caret-down"></i>
+            <i class="fa-solid fa-globe"></i>
+            <span id="languageText">EN</span>
           </button>
           <div id="myDropdown" class="dropdown-content">
-            <a href="about-us.html" onclick="changeLanguage('ENG')">ENG</a>
-            <a href="about-us-ar.html" onclick="changeLanguage('ARB')">ARB</a>
+            <a href="about-us.html" onclick="changeLanguage('ENG')">EN</a>
+            <a href="about-us-ar.html" onclick="changeLanguage('ARB')">AR</a>
           </div>
         </div>
 

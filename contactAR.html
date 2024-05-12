@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>للتواصل</title>
+    <title>للتواصل | كاسل سوفت</title>
     <!-- font awesome icons -->
     <link
       rel="stylesheet"
@@ -14,13 +14,22 @@
     />
     <!-- title tag logo -->
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!--google-font-->
     <!-- CSS Files -->
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/contact.css" />
     <link rel="stylesheet" href="CSS/ar.css" />
+    <link rel="stylesheet" href="CSS/responAr.css" />
+    <link rel="stylesheet" href="CSS/style-ar2.css" />
   </head>
-  <body>
+  <body class="cairo-uniquifier">
     <div class="section">
       <div class="navbar p-5" id="top">
         <div class="animation-box">
@@ -47,12 +56,12 @@
         </nav>
         <div class="language-button dropdown">
           <button onclick="toggleDropdown()" class="dropbtn" id="languageBtn">
-            <span id="languageText">ENG</span>
-            <i class="fa-solid fa-caret-down"></i>
+            <i class="fa-solid fa-globe"></i>
+            <span id="languageText">EN</span>
           </button>
           <div id="myDropdown" class="dropdown-content">
-            <a href="contact.html" onclick="changeLanguage('ENG')">ENG</a>
-            <a href="contactAR.html" onclick="changeLanguage('ARB')">ARB</a>
+            <a href="contact.html" onclick="changeLanguage('ENG')">EN</a>
+            <a href="contactAR.html" onclick="changeLanguage('ARB')">AR</a>
           </div>
         </div>
         <input type="checkbox" id="check" />
@@ -69,6 +78,8 @@
         <a href="contactAR.html"> اتصل بنا </a>
       </div>
     </div>
+
+    <h2 class="primary heading">اتصل بنا</h2>
 
     <div class="container-contact">
       <div class="contact">
@@ -175,34 +186,27 @@
       </div>
     </div>
 
-    <div class="section footer" dir="rtl">
-      <div class="container-footer" style="justify-content: space-between">
-        <div class="contact-section">
-          <div class="contact-item name">
-            <a href="index.html">كاسل</a>
-          </div>
-          <div class="contact-item">
-            <p>
-              تطوير المنتجات بسرعة وبشكلٍ قابل للصيانة يُحقق حلمك في بدء شركتك
-              الناشئة، أو حتى حل مشكلة في عملك
-            </p>
-          </div>
-          <div class="contact-item">
-            <form action="#" id="footer-form">
-              <div class="input-field field">
-                <input
-                  type="email"
-                  placeholder="البريد الإلكتروني"
-                  id="footer-email"
-                  class="f-item"
-                  autocomplete="off"
-                />
-                <div class="error-txt">يجب ملء خانة البريد الإلكتروني</div>
-              </div>
-              <button type="submit">إرسال بريد إلكتروني</button>
-            </form>
-          </div>
-          <div class="contact-item">
+    <div dir="rtl">
+      <div class="foot">
+        <div style="text-align: right">
+          <a href="index-ar.html" class="kassel-footer">كاسل</a>
+          <p class="title-kassel">
+            تطوير المنتجات بسرعة وبشكلٍ قابل للصيانة يُحقق حلمك<br />
+            في بدء شركتك الناشئة، أو حتى حل مشكلة في عملك
+          </p>
+          <form action="" class="form">
+            <input
+              type="text"
+              placeholder="البريد الالكترونى"
+              class="footer-input"
+            />
+            <input
+              type="submit"
+              value="ارسال بريد الكترونى"
+              class="footer-btn"
+            />
+          </form>
+          <div class="footer-social" dir="">
             <h4>تابعنا</h4>
             <a
               href="https://www.facebook.com/profile.php?id=61555183182719&mibextid=PlNXYD"
@@ -240,59 +244,60 @@
             </a>
           </div>
         </div>
-        <div class="nav-section">
-          <div class="nav-heading">
-            <h3 class="">الشركة</h3>
-          </div>
-          <div class="nav-link">
-            <a href=""> من نحن </a>
-          </div>
-          <div class="nav-link">
-            <a href=""> الخدمات </a>
-          </div>
-          <div class="nav-link">
-            <a href=""> وظائف </a>
-          </div>
+        <div class="company-title">
+          <p>الشركة</p>
+          <ul>
+            <li>
+              <a href="about-us-ar.html">من نحن</a>
+            </li>
+            <li>
+              <a href="services-ar.html">الخدمات</a>
+            </li>
+            <li>
+              <a href="career.html">وظائف</a>
+            </li>
+          </ul>
         </div>
-        <div class="support-section">
-          <div class="support-heading">
-            <h3 style="text-align: center">الدعم</h3>
-          </div>
-          <div class="support-link">
-            <a href="conditionsAR.html" target="_blank"> الشروط والأحكام </a>
-          </div>
-          <div class="support-link">
-            <a href="privacyAr.Html" target="_blank"> سياسة الخصوصية </a>
-          </div>
-          <div class="support-link">
-            <a href="contactAR.html"> اتصل بنا </a>
-          </div>
+        <div class="company-title">
+          <p>الدعم</p>
+          <ul>
+            <li>
+              <a href="conditionsAR.html">الشروط والاحكام</a>
+            </li>
+            <li>
+              <a href="privacyAr.Html">سياسة الخصوصية</a>
+            </li>
+            <li>
+              <a href="contactAR.html">اتصل بنا</a>
+            </li>
+          </ul>
         </div>
-        <div class="location-section" dir="rtl">
-          <div class="location-heading" style="margin-right: 40px" dir="rtl">
-            <h3 style="text-align: right">تواصل معنا</h3>
-          </div>
-          <div class="location-item">
-            <p>http://www.kasselsoft.com</p>
-            <i class="fa-solid fa-globe"></i>
-          </div>
-          <div class="location-item">
-            <p>kasselsoft@kasselsoft.com</p>
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-          <div class="location-item" style="margin-right: 20px">
-            <p>شارع الملكة رانيا</p>
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
+        <div class="company-title">
+          <p>تواصل معنا</p>
+          <ul>
+            <li>
+              <span>http://www.kasselsoft.com</span>
+              <i class="fa-solid fa-globe contact-icon"></i>
+            </li>
+            <li>
+              <span>kasselsoft@kasselsoft.com</span>
+              <i class="fa-solid fa-envelope contact-icon"></i>
+            </li>
+            <li>
+              <span>شارع الملكة رانيا</span>
+              <i class="fa-solid fa-location-dot contact-icon"></i>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <!-- Float Button -->
+    <!-- Float Button  -->
     <div class="floating-container">
       <div class="floating-button" id="floating-button">
         <i class="fa-solid fa-headset"></i>
       </div>
+
       <div class="element-container" id="element-container">
         <span>
           <a
@@ -324,7 +329,11 @@
           </a>
         </span>
         <span>
-          <a href="https://wa.me/message/74Q6F22FDGNYN1" target="_blank">
+          <a
+            href="https://wa.me/message/74Q6F22FDGNYN1
+                "
+            target="_blank"
+          >
             <i class="fa-brands fa-whatsapp"></i>
           </a>
         </span>

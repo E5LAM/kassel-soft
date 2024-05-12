@@ -93,11 +93,20 @@ body {
   overflow-x: hidden;
   color: var(--text-color);
 }
+/*googlefont*/
 
+.cairo-uniquifier {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+/*google-font*/
 body {
   margin: 0;
   background-color: var(--bg-color);
-  font-family: sans-serif;
   position: relative;
 }
 
@@ -126,10 +135,11 @@ nav,
   flex-direction: row;
   justify-content: space-evenly;
   box-sizing: content-box;
+  align-items: center;
 }
 
 .nav-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--blue);
   cursor: pointer;
   display: none;
@@ -137,7 +147,7 @@ nav,
 .navbar .nav-logo a {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   /* background: -webkit-linear-gradient(#eee,#333 , var(--blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
@@ -164,7 +174,6 @@ nav,
 
 nav,
 select,
-.dropbtn,
 option {
   border-radius: 1rem;
   /* background-image: linear-gradient(rgb(48, 48, 48) 13% , rgb(30, 30, 30) 40% , #0c0d11 86%); */
@@ -201,7 +210,6 @@ option {
   text-align: center;
   color: white;
   text-transform: capitalize;
-  font-weight: bold;
   padding: 0.25rem 0.4rem;
   justify-content: center;
   text-transform: capitalize;
@@ -305,7 +313,7 @@ h1 span {
 
 .container .content h2 {
   color: var(--blue-white);
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .container .content p {
@@ -1107,6 +1115,7 @@ h1 span {
 .work .work-container .box h2 {
   text-transform: capitalize;
   margin: 0.5rem 0;
+  text-align: center;
 }
 .work .work-container .box .description {
   font-size: 0.9rem;
@@ -1970,8 +1979,7 @@ h1 span {
   }
   .navbar .language-button {
     position: absolute;
-    left: 68%;
-    top: 100%;
+    left: 75%;
   }
   .navbar nav {
     display: none;
@@ -2272,9 +2280,14 @@ h1 span {
   .navbar {
     width: 100vw;
   }
-  .navbar .language-button {
-    display: none;
+  /* .language-button {
+    display: inline-block;
   }
+
+  .language-button button {
+    padding:3px 5px !important;
+    font-size: 10px !important;
+  } */
   body {
     overflow-x: hidden;
   }
@@ -2291,8 +2304,7 @@ h1 span {
   }
   .navbar .language-button {
     position: absolute;
-    left: 57%;
-    top: 100%;
+    left: 70%;
   }
   .section:nth-child(1) .container .content h2 {
     font-size: 1rem;
@@ -2308,13 +2320,17 @@ h1 span {
   }
 
   .services-section .service-box {
-    width: 35%;
+    width: 40%;
     margin: 1rem 0rem;
+    height: 166px;
   }
   .services-section .service-box:nth-child(3) {
     height: 8.5rem;
+    width: 40%;
+    height: 172px;
     /* padding-top: 0; */
   }
+
   .services-section .service-box .img-section img {
     width: 40%;
   }
@@ -2322,6 +2338,7 @@ h1 span {
     width: 100%;
     margin-bottom: 1rem;
   }
+
   .services-section .service-box .hedding-section h2 span {
     font-size: 1.1rem;
     line-height: normal;
@@ -2488,10 +2505,12 @@ h1 span {
 }
 
 .dropbtn {
-  color: #fff;
-  font-size: 1rem;
-  padding: 0.5rem 20px;
-  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
 }
 
 .fa-caret-down {
@@ -2502,7 +2521,6 @@ h1 span {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--blue);
   min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -2514,7 +2532,7 @@ h1 span {
 }
 
 .dropdown-content a {
-  color: #fff;
+  color: #000;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -2522,5 +2540,10 @@ h1 span {
 
 .dropdown-content a:hover {
   background-color: #002646d1;
-  border-radius: 1rem;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.fa-bars {
+  font-size: 40px;
 }

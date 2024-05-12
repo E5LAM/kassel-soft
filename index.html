@@ -12,14 +12,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!--google-font-->
     <!-- title tag logo -->
     <!-- <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"> -->
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
-  <body>
+  <body class="cairo-uniquifier">
     <div class="section" id="top">
       <div class="navbar">
         <div class="animation-box">
@@ -50,12 +57,12 @@
 
         <div class="language-button dropdown">
           <button onclick="toggleDropdown()" class="dropbtn" id="languageBtn">
-            <span id="languageText">ENG</span>
-            <i class="fa-solid fa-caret-down"></i>
+            <i class="fa-solid fa-globe"></i>
+            <span id="languageText">EN</span>
           </button>
           <div id="myDropdown" class="dropdown-content">
-            <a href="index.html" onclick="changeLanguage('ENG')">ENG</a>
-            <a href="index-ar.html" onclick="changeLanguage('ARB')">ARB</a>
+            <a href="index.html" onclick="changeLanguage('ENG')">EN</a>
+            <a href="index-ar.html" onclick="changeLanguage('ARB')">AR</a>
           </div>
         </div>
 

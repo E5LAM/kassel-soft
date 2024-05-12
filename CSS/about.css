@@ -3,6 +3,18 @@
     justify-content: space-evenly;
     align-items: start;
 } */
+ /*googlefont*/
+ 
+ .cairo-uniquifier {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+ "slnt" 0;
+}
+
+/*google-font*/
 
 .section:nth-child(1) .container .content h2 {
   font-size: 2.5rem;
@@ -78,7 +90,7 @@
 
 .container .ceo-box .ceo-item {
   padding: 3rem 2rem;
-  text-align: left;
+  text-align: center;
   flex-direction: column;
   border-top: 3px solid var(--blue);
   box-shadow: 0px 0px 15px var(--blue);
@@ -120,12 +132,13 @@
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-
   margin-top: 5rem;
   flex-wrap: wrap;
-  width: 100%;
+  width: 105%;
 }
-
+.successfully-products .container-product:nth-child(7) {
+  display: none;
+}
 .container-product .product-box {
   border: 2px solid var(--blue-black);
   border-radius: 1rem;
@@ -136,7 +149,7 @@
   justify-content: center;
   margin: auto;
   width: 13%;
-  height: 8%;
+  height: 118px;
   margin: 1rem 1.5rem;
   background-color: var(--bg-item);
 }
@@ -203,6 +216,7 @@
   }
   .section:nth-child(1) .container .content h4 {
     font-size: 1.2rem;
+    width: 45%;
   }
 
   .section:nth-child(1) .container .content .check-text .item {
@@ -257,7 +271,8 @@
 
 @media screen and (max-width: 600px) {
   .container-product .product-box {
-    width: 40%;
+    width: 37%;
+    height: 162px;
     margin: 1rem 0rem;
     padding: 1rem 0.35rem;
   }
@@ -288,6 +303,9 @@
 }
 
 @media screen and (max-width: 450px) {
+  .container-product .product-box:nth-child(8) {
+    height: 160px;
+  }
   .section:nth-child(1) .container .img {
     width: 45%;
     transform: translate(-30px);

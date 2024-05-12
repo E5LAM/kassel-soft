@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width:450px) {
+    .services-section .service-box:nth-child(3) {
+        height: 8.5rem;
+        width: 42%;
+        /* padding-top: 0; */
+      }
+      .services-section .service-box:nth-child(4) {
+        height: 8.5rem;
+        width: 41%;
+        /* padding-top: 0; */
+      }
+  
+      .footer .container-footer .support-section h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      .footer .container-footer .contact-section .contact-item button {
+        position: relative;
+        left: 70%;
+        display: inline-block;
+        font-size: 10px;
+      }
+      .footer .container-footer .contact-section .contact-item input {
+        width: 70%;
+        position: relative;
+        left: 100%;
+      }
+     
+      .footer .name a{
+        margin: auto -170px;
+        position: relative;
+     }
+    .content-item-p-2 {
+     margin: auto -150px;
+    }
+    .contact-section .contact-item .iconDiv {
+      position: relative;
+      left: 150px;
+    }
+    .footer .container-footer .support-section h3 {
+     position: relative;
+     left: 45%;
+    }
+    .footer .location-section .location-heading h3 {
+      position: relative;
+      left: 12%;
+    }
+ }
+ @media screen and (max-width: 1200px) { 
+.container-product .product-box {
+    width: 40%;
+}
+
+}
+@media screen and (max-width: 600px) { 
+  .container-product .product-box {
+    width: 37%;
+    height: 163px;
+}
+
+}
+
+@media  (min-width:459px) and (max-width:800px) {
+  .footer .container-footer .contact-section .contact-item button {
+    position: relative;
+    left: 40%;
+    display: inline-block;
+    font-size: 10px;
+  }
+  .footer .container-footer .contact-section .contact-item input {
+    width: 75%;
+    position: relative;
+    left: 55%;
+    
+  }
+}
