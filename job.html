@@ -12,14 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <!--google-font-->
+
     <!-- title tag logo -->
     <!-- <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"> -->
 
@@ -28,7 +21,7 @@
     <link rel="stylesheet" href="CSS/contact.css" />
     <link rel="stylesheet" href="CSS/career.css" />
   </head>
-  <body class="cairo-uniquifier">
+  <body>
     <div class="navbar" id="top">
       <div class="animation-box">
         <div class="nav-logo">
@@ -56,13 +49,14 @@
         </span>
       </nav>
 
-      <div class="language-button dropdown">
-        <button onclick="toggleDropdown()" class="dropbtn" id="languageBtn">
+      <div class="language-button dropdown" onclick="toggleDropdown()">
+        <button class="dropbtn" id="languageBtn">
           <i class="fa-solid fa-globe"></i>
           <span id="languageText">EN</span>
+          <i class="fa-solid fa-caret-down arrow-down"></i>
         </button>
         <div id="myDropdown" class="dropdown-content">
-          <a href="#" onclick="changeLanguage('ENG')">EN</a>
+          <a href="job.html" onclick="changeLanguage('ENG')">EN</a>
           <a href="#" onclick="changeLanguage('ARB')">AR</a>
         </div>
       </div>

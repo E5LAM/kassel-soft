@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>للتواصل | كاسل سوفت</title>
+    <title>Contact Us | KASSEL SOFT</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome icons -->
     <link
       rel="stylesheet"
@@ -12,35 +19,30 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <!-- title tag logo -->
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-    <!--google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <!--google-font-->
+    <!-- <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"> -->
+
     <!-- CSS Files -->
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/contact.css" />
-    <link rel="stylesheet" href="CSS/ar.css" />
-    <link rel="stylesheet" href="CSS/responAr.css" />
     <link rel="stylesheet" href="CSS/style-ar2.css" />
   </head>
   <body class="cairo-uniquifier">
-    <div class="section">
-      <div class="navbar p-5" id="top">
+    <div class="section" id="top">
+      <div class="navbar">
         <div class="animation-box">
           <div class="nav-logo">
-            <a href="#">كاسل</a>
+            <a href="index-ar.html">كاسل</a>
           </div>
+          <!-- <span class="jet"></span> -->
         </div>
+
         <nav class="menu" id="nav">
-          <span class="nav-item" style="border-right: none !important">
+          <span class="nav-item">
             <a href="index-ar.html" data-i18n="home">الرئيسية</a>
           </span>
+
           <span class="nav-item">
             <a href="about-us-ar.html" data-i18n="about">من نحن</a>
           </span>
@@ -50,14 +52,16 @@
           <span class="nav-item">
             <a href="career.html" data-i18n="career">الوظائف</a>
           </span>
-          <span class="nav-item" style="border: none !important">
+          <span class="nav-item">
             <a href="contactAR.html" data-i18n="contact">اتصل بنا</a>
           </span>
         </nav>
-        <div class="language-button dropdown">
-          <button onclick="toggleDropdown()" class="dropbtn" id="languageBtn">
+
+        <div class="language-button dropdown" onclick="toggleDropdown()">
+          <button class="dropbtn" id="languageBtn">
             <i class="fa-solid fa-globe"></i>
             <span id="languageText">EN</span>
+            <i class="fa-solid fa-caret-down arrow-down"></i>
           </button>
           <div id="myDropdown" class="dropdown-content">
             <a href="contact.html" onclick="changeLanguage('ENG')">EN</a>
@@ -71,99 +75,106 @@
         </label>
       </div>
       <div class="nav-toggle">
-        <a href="index-ar.html"> الرئيسية </a>
-        <a href="about-us-ar.html"> من نحن </a>
-        <a href="services-ar.html"> الخدمات </a>
-        <a href="career.html"> الوظائف </a>
-        <a href="contactAR.html"> اتصل بنا </a>
+        <a href="index-ar.html"> home </a>
+        <a href="about-us-ar.html"> about us </a>
+        <a href="services-ar.html"> services </a>
+        <a href="career.html"> career </a>
+        <a href="contactAR.html"> contact us </a>
       </div>
-    </div>
 
-    <h2 class="primary heading">اتصل بنا</h2>
+      <h2 class="primary heading">اتصل بنا</h2>
 
-    <div class="container-contact">
-      <div class="contact">
-        <form action="#" id="contact-form">
-          <div class="input-box">
-            <div class="input-field field">
-              <input
-                type="text"
-                placeholder="الاسم الكامل"
-                id="name"
+      <div class="container-contact">
+        <div class="contact">
+          <form action="#" id="contact-form">
+            <div class="input-box">
+              <div class="input-field field">
+                <input
+                  type="text"
+                  placeholder="الاسم بالكامل"
+                  id="name"
+                  class="item"
+                  autocomplete="off"
+                />
+                <div class="error-txt">لا يمكن ترك الاسم فارغا</div>
+              </div>
+
+              <div class="input-field field">
+                <input
+                  type="email"
+                  placeholder="البريد الالكترونى"
+                  id="email"
+                  class="item"
+                  autocomplete="off"
+                />
+                <div class="error-txt">لا يمكن ترك العنوان فارغا</div>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <div class="input-field field">
+                <input
+                  type="number"
+                  placeholder="رقم الهاتف"
+                  id="phone"
+                  class="item"
+                  autocomplete="off"
+                />
+                <div class="error-txt">لا يمكن ترك رقم التليفون فارغاً</div>
+              </div>
+
+              <div class="input-field field">
+                <input
+                  type="text"
+                  placeholder="الموضوع"
+                  id="subject"
+                  class="item"
+                  autocomplete="off"
+                />
+                <div class="error-txt">لا يمكن ترك الموضوع فارغا</div>
+              </div>
+            </div>
+
+            <div class="textarea-field field">
+              <textarea
+                name=""
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="اترك رسالتك"
                 class="item"
                 autocomplete="off"
-              />
-              <div class="error-txt">يجب ملء الاسم الكامل</div>
+              ></textarea>
+              <div class="error-txt">لا يمكن ترك الرساله فارغه</div>
             </div>
-            <div class="input-field field">
-              <input
-                type="email"
-                placeholder="البريد الإلكتروني"
-                id="email"
-                class="item"
-                autocomplete="off"
-              />
-              <div class="error-txt">يجب ملء البريد الإلكتروني</div>
+
+            <button type="submit">ارسل الرسالة</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <div class="info">
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <h4>العنوان</h4>
+              <p>شارع الملكه رانيا</p>
             </div>
-          </div>
-          <div class="input-box">
-            <div class="input-field field">
-              <input
-                type="number"
-                placeholder="رقم الهاتف"
-                id="phone"
-                class="item"
-                autocomplete="off"
-              />
-              <div class="error-txt">يجب ملء رقم الهاتف</div>
+
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <h4>البريد الالكترونى</h4>
+              <p>kasselsoft @kasselsoft.com</p>
             </div>
-            <div class="input-field field">
-              <input
-                type="text"
-                placeholder="الموضوع"
-                id="subject"
-                class="item"
-                autocomplete="off"
-              />
-              <div class="error-txt">يجب ملء الموضوع</div>
+
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <h4>رقم التليفون</h4>
+              <p>+962 790039555</p>
             </div>
-          </div>
-          <div class="textarea-field field">
-            <textarea
-              name=""
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="رسالتك"
-              class="item"
-              autocomplete="off"
-            ></textarea>
-            <div class="error-txt">يجب ملء الرسالة</div>
-          </div>
-          <button type="submit">إرسال الرسالة</button>
-        </form>
-      </div>
-      <div class="contact-info">
-        <div class="info">
-          <div class="info-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <h4>العنوان</h4>
-            <p>شارع الملكة رانيا</p>
-          </div>
-          <div class="info-item">
-            <i class="fa-solid fa-envelope"></i>
-            <h4>البريد الإلكتروني</h4>
-            <p>kasselsoft@kasselsoft.com</p>
-          </div>
-          <div class="info-item">
-            <i class="fa-solid fa-phone"></i>
-            <h4>الهاتف</h4>
-            <p>+962 790039555</p>
           </div>
         </div>
       </div>
     </div>
-
     <div class="section">
       <div class="box">
         <div class="map">
@@ -186,13 +197,15 @@
       </div>
     </div>
 
+    <!--------------- FOOTER -------->
+
     <div dir="rtl">
       <div class="foot">
         <div style="text-align: right" class="title-res">
           <a href="index-ar.html" class="kassel-footer">كاسل</a>
           <p class="title-kassel">
-            تطوير المنتجات بسرعة وبشكلٍ قابل للصيانة يُحقق حلمك<br />
-            في بدء شركتك الناشئة، أو حتى حل مشكلة في عملك
+            تطوير المنتجات بسرعة وبشكلٍ قابل للصيانة يُحقق حلمك في بدء شركتك
+            الناشئة، أو حتى حل مشكلة في عملك
           </p>
           <form action="" class="form">
             <input
@@ -301,7 +314,9 @@
       <div class="element-container" id="element-container">
         <span>
           <a
-            href="https://www.facebook.com/profile.php?id=61555183182719&mibextid=PlNXYD"
+            href="
+                https://www.facebook.com/profile.php?id=61555183182719&mib
+                        extid=PlNXYD"
             target="_blank"
           >
             <i class="fa-brands fa-facebook-f"></i>
@@ -309,20 +324,27 @@
         </span>
         <span class="instagram">
           <a
-            href="https://www.instagram.com/_kassel_?igsh=cTY1dmtxd29nODF3&utm_source=qr"
+            href="
+                https://www.instagram.com/_kassel_?igsh=cTY1dmtxd29nODF3&u
+                        tm_source=qr"
             target="_blank"
           >
             <i class="fa-brands fa-instagram"></i>
           </a>
         </span>
         <span>
-          <a href="https://pin.it/6CI41cw0A" target="_blank">
+          <a
+            href="https://pin.it/6CI41cw0A
+                "
+            target="_blank"
+          >
             <i class="fa-brands fa-pinterest-p"></i>
           </a>
         </span>
         <span>
           <a
-            href="https://x.com/kasselsoft/status/1751659476862537793?s=20"
+            href="https://x.com/kasselsoft/status/1751659476862537793?s=20
+                "
             target="_blank"
           >
             <i class="fa-brands fa-x-twitter"></i>
@@ -339,6 +361,8 @@
         </span>
       </div>
     </div>
+
+    <!-- Back to Top Button  -->
 
     <div class="back-top-button">
       <a href="#top">

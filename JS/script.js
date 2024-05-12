@@ -49,9 +49,9 @@ function toggleDropdown() {
 function changeLanguage(language) {
   let languageBtn = document.getElementById("languageBtn");
   if (language === "ENG") {
-    languageBtn.innerHTML = `<i class="fa-solid fa-globe"></i> EN`;
+    languageBtn.innerHTML = `<i class="fa-solid fa-globe"></i> ENG <i class="fa-solid fa-caret-down arrow-down"></i>`;
   } else if (language === "ARB") {
-    languageBtn.innerHTML = `<i class="fa-solid fa-globe"></i> AR`;
+    languageBtn.innerHTML = `<i class="fa-solid fa-globe"></i> ARB <i class="fa-solid fa-caret-down arrow-down"></i>`;
   }
   localStorage.setItem("selectedLanguage", language);
 

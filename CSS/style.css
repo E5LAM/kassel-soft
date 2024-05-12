@@ -93,20 +93,11 @@ body {
   overflow-x: hidden;
   color: var(--text-color);
 }
-/*googlefont*/
 
-.cairo-uniquifier {
-  font-family: "Cairo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
-}
-
-/*google-font*/
 body {
   margin: 0;
   background-color: var(--bg-color);
+  font-family: sans-serif;
   position: relative;
 }
 
@@ -135,11 +126,10 @@ nav,
   flex-direction: row;
   justify-content: space-evenly;
   box-sizing: content-box;
-  align-items: center;
 }
 
 .nav-icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--blue);
   cursor: pointer;
   display: none;
@@ -147,7 +137,7 @@ nav,
 .navbar .nav-logo a {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   /* background: -webkit-linear-gradient(#eee,#333 , var(--blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
@@ -210,6 +200,7 @@ option {
   text-align: center;
   color: white;
   text-transform: capitalize;
+  font-weight: bold;
   padding: 0.25rem 0.4rem;
   justify-content: center;
   text-transform: capitalize;
@@ -313,7 +304,7 @@ h1 span {
 
 .container .content h2 {
   color: var(--blue-white);
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .container .content p {
@@ -1115,7 +1106,6 @@ h1 span {
 .work .work-container .box h2 {
   text-transform: capitalize;
   margin: 0.5rem 0;
-  text-align: center;
 }
 .work .work-container .box .description {
   font-size: 0.9rem;
@@ -1979,7 +1969,8 @@ h1 span {
   }
   .navbar .language-button {
     position: absolute;
-    left: 75%;
+    left: 68%;
+    top: 100%;
   }
   .navbar nav {
     display: none;
@@ -2080,9 +2071,6 @@ h1 span {
 }
 
 @media screen and (max-width: 650px) {
-  .content p {
-    width: 100%;
-  }
   .section:nth-child(1) .container .content h1 span {
     font-size: 2rem;
   }
@@ -2154,9 +2142,6 @@ h1 span {
 }
 
 @media screen and (max-width: 576px) {
-  .content p {
-    width: 100%;
-  }
   .section:nth-child(1) .container .content h1 span {
     font-size: 2rem;
   }
@@ -2270,9 +2255,6 @@ h1 span {
 }
 
 @media screen and (max-width: 450px) {
-  .content p {
-    width: 100%;
-  }
   .section {
     width: 100vw;
     overflow-x: hidden;
@@ -2280,14 +2262,9 @@ h1 span {
   .navbar {
     width: 100vw;
   }
-  /* .language-button {
-    display: inline-block;
+  .navbar .language-button {
+    display: none;
   }
-
-  .language-button button {
-    padding:3px 5px !important;
-    font-size: 10px !important;
-  } */
   body {
     overflow-x: hidden;
   }
@@ -2304,7 +2281,8 @@ h1 span {
   }
   .navbar .language-button {
     position: absolute;
-    left: 70%;
+    left: 57%;
+    top: 100%;
   }
   .section:nth-child(1) .container .content h2 {
     font-size: 1rem;
@@ -2320,17 +2298,13 @@ h1 span {
   }
 
   .services-section .service-box {
-    width: 40%;
+    width: 35%;
     margin: 1rem 0rem;
-    height: 166px;
   }
   .services-section .service-box:nth-child(3) {
     height: 8.5rem;
-    width: 40%;
-    height: 172px;
     /* padding-top: 0; */
   }
-
   .services-section .service-box .img-section img {
     width: 40%;
   }
@@ -2338,7 +2312,6 @@ h1 span {
     width: 100%;
     margin-bottom: 1rem;
   }
-
   .services-section .service-box .hedding-section h2 span {
     font-size: 1.1rem;
     line-height: normal;
@@ -2504,6 +2477,11 @@ h1 span {
   }
 }
 
+.dropdown {
+  position: relative;
+  display: flex;
+}
+
 .dropbtn {
   font-size: 20px;
   border: none;
@@ -2521,10 +2499,12 @@ h1 span {
 .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 140px;
+  min-width: 115px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 1rem;
+  left: 0;
+  top: 30px;
 }
 
 .dropdown .show {
@@ -2532,18 +2512,103 @@ h1 span {
 }
 
 .dropdown-content a {
-  color: #000;
-  padding: 12px 16px;
+  padding: 5px 16px;
   text-decoration: none;
   display: block;
+  color: #fff;
 }
 
 .dropdown-content a:hover {
-  background-color: #002646d1;
-  color: #fff;
-  transition: 0.3s;
+  background-color: #0f3d65a3;
+  border-radius: 1rem;
 }
 
-.fa-bars {
-  font-size: 40px;
+@media screen and (max-width: 768px) {
+  .navbar .language-button {
+    position: absolute;
+    left: 70%;
+    top: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .arrow-down {
+    display: block;
+  }
+  .fa-globe {
+    display: none;
+  }
+  .dropdown {
+    background-color: var(--blue);
+    padding: 5px 20px;
+    border-radius: 2rem;
+    box-shadow: 1px 2px 4px rgb(20, 20, 20), 0 4px 12px rgb(10, 10, 10);
+  }
+  .dropbtn {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  .dropdown-content {
+    background-color: var(--blue);
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    align-items: center;
+  }
+  .navbar .language-button {
+    display: block !important;
+  }
+  .arrow-down {
+    display: none !important;
+  }
+  .fa-globe {
+    display: block;
+  }
+  .dropdown-content a {
+    color: #000 !important;
+  }
+  .dropdown-content a:hover {
+    background-color: #002646d1;
+    border-radius: 1rem;
+    color: #fff !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .services-section .service-box .img-section {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .services-section .service-box {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .language-button {
+    left: 67%;
+  }
+}
+@media (max-width: 600px) {
+  .navbar .language-button {
+    left: 72%;
+  }
+}
+@media (max-width: 430px) {
+  .navbar .language-button {
+    left: 68%;
+  }
+}
+@media (max-width: 390px) {
+  .navbar .language-button {
+    left: 65%;
+  }
 }

@@ -15,19 +15,12 @@
 
     <!-- title tag logo -->
     <!-- <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"> -->
-    <!--google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <!--google-font-->
+
     <!-- CSS Files -->
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/contact.css" />
   </head>
-  <body class="cairo-uniquifier">
+  <body>
     <div class="section" id="top">
       <div class="navbar">
         <div class="animation-box">
@@ -56,10 +49,11 @@
           </span>
         </nav>
 
-        <div class="language-button dropdown">
-          <button onclick="toggleDropdown()" class="dropbtn" id="languageBtn">
+        <div class="language-button dropdown" onclick="toggleDropdown()">
+          <button class="dropbtn" id="languageBtn">
             <i class="fa-solid fa-globe"></i>
             <span id="languageText">EN</span>
+            <i class="fa-solid fa-caret-down arrow-down"></i>
           </button>
           <div id="myDropdown" class="dropdown-content">
             <a href="contact.html" onclick="changeLanguage('ENG')">EN</a>

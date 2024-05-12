@@ -257,7 +257,22 @@
 .company-title {
   width: 25%;
 }
+.services-section .service-box {
+  height: 200px;
+}
+.company-title:last-child ul li {
+  display: flex;
+  align-items: center;
+}
 
+@media (min-width: 1200px) {
+  .img-about {
+    margin-left: 80px !important;
+  }
+  .section:nth-child(2) .container {
+    width: 98%;
+  }
+}
 @media (max-width: 992px) {
   .foot {
     flex-direction: column;
@@ -283,7 +298,11 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+.navbar {
+  align-items: center;
+}
+
+@media (max-width: 768px) {
   .footer-social h4 {
     display: none;
   }
@@ -294,4 +313,95 @@
     font-size: 16px;
     padding: 0.5rem 0.75rem;
   }
+  .navbar .language-button {
+    left: 73%;
+  }
+  .form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .navbar .language-button {
+    left: 72%;
+  }
+}
+
+@media (min-width: 768px) {
+  .arrow-down {
+    display: block;
+  }
+  .fa-globe {
+    display: none;
+  }
+  .dropdown {
+    background-color: var(--blue);
+    padding: 10px 20px;
+    border-radius: 2rem;
+    box-shadow: 1px 2px 4px rgb(20, 20, 20), 0 4px 12px rgb(10, 10, 10);
+  }
+  .dropbtn {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  .dropdown-content {
+    background-color: var(--blue);
+    color: #fff;
+  }
+  .dropdown-content {
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .language-button {
+    display: block !important;
+  }
+  .arrow-down {
+    display: none !important;
+  }
+  .fa-globe {
+    display: block;
+  }
+  .dropdown-content a {
+    color: #000 !important;
+  }
+  .dropdown-content a:hover {
+    background-color: #002646d1;
+    border-radius: 1rem;
+    color: #fff !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .services-section .service-box .img-section {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1349px) {
+  .container-product .product-box {
+    height: 150px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .services-section .service-box:nth-child(3) {
+    height: 200px;
+  }
+}
+@media (max-width: 430px) {
+  .navbar .language-button {
+    left: 68%;
+  }
+}
+@media (max-width: 390px) {
+  .navbar .language-button {
+    left: 65%;
+  }
+}
+
+.company-title .fa-globe {
+  display: block;
 }
