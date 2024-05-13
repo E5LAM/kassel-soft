@@ -2516,6 +2516,7 @@ h1 span {
   text-decoration: none;
   display: block;
   color: #fff;
+  text-align: left;
 }
 
 .dropdown-content a:hover {
@@ -2586,11 +2587,7 @@ h1 span {
   }
 }
 
-@media (max-width: 1200px) {
-  .services-section .service-box {
-    height: 200px;
-  }
-}
+
 
 @media (max-width: 768px) {
   .navbar .language-button {
@@ -2599,7 +2596,7 @@ h1 span {
 }
 @media (max-width: 600px) {
   .navbar .language-button {
-    left: 72%;
+    left: 68%;
   }
 }
 @media (max-width: 430px) {
