@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy | KASSEL SOFT</title>
+    <title>كاسل سوفت | سياسة الخصوصية</title>
     <!--google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +31,7 @@
   </head>
   <body class="cairo-uniquifier">
     <div class="section">
-      <div class="navbar" id="top">
+      <div class="navbar" id="top" dir="rtl">
         <div class="animation-box">
           <div class="nav-logo">
             <a href="index-ar.html">كاسل</a>
@@ -58,7 +58,14 @@
           </span>
         </nav>
 
-        <div class="language-button dropdown" onclick="toggleDropdown()">
+        <div class="language-button">
+          <select name="" id="select" onchange="redirectToPage()">
+            <option value="privacy.html">eng</option>
+            <option value="privacyAr.html" selected>arb</option>
+          </select>
+        </div>
+
+        <div class="language-btn dropdown" onclick="toggleDropdown()">
           <button class="dropbtn" id="languageBtn">
             <i class="fa-solid fa-globe"></i>
             <span id="languageText">EN</span>
@@ -600,7 +607,7 @@
               <i class="fa-solid fa-globe contact-icon"></i>
             </li>
             <li>
-              <span>kasselsoft@kasselsoft.com</span>
+              <span>info@kasselsoft.com</span>
               <i class="fa-solid fa-envelope contact-icon"></i>
             </li>
             <li>

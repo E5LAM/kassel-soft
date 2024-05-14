@@ -29,7 +29,7 @@
   </head>
   <body class="cairo-uniquifier">
     <div class="section" id="top">
-      <div class="navbar">
+      <div class="navbar" dir="rtl">
         <div class="animation-box">
           <div class="nav-logo">
             <a href="index-ar.html">كاسل</a>
@@ -50,12 +50,19 @@
           <span class="nav-item">
             <a href="career.html" data-i18n="career">الوظائف</a>
           </span>
-          <span class="nav-item" style="border: none !important">
+          <span class="nav-item">
             <a href="contactAR.html" data-i18n="contact">اتصل بنا</a>
           </span>
         </nav>
 
-        <div class="language-button dropdown" onclick="toggleDropdown()">
+        <div class="language-button">
+          <select name="" id="select" onchange="redirectToPage()">
+            <option value="index.html">eng</option>
+            <option value="index-ar.html" selected>arb</option>
+          </select>
+        </div>
+
+        <div class="language-btn dropdown" onclick="toggleDropdown()" dir="ltr">
           <button class="dropbtn" id="languageBtn">
             <i class="fa-solid fa-globe"></i>
             <span id="languageText">EN</span>
@@ -73,7 +80,7 @@
           <i class="fa-solid fa-x" id="close-icon" onclick="showSlider()"></i>
         </label>
       </div>
-      <div class="nav-toggle">
+      <div class="nav-toggle" dir="">
         <a href="index-ar.html"> الرئيسية </a>
         <a href="about-us-ar.html"> من نحن </a>
         <a href="services-ar.html"> الخدمات </a>
@@ -154,8 +161,9 @@
             <img src="img/web-development.png" alt="" />
           </div>
           <div class="hedding-section">
-            <h2 class="">
-              <span class="primary">تصميم & تطوير المواقع الالكترونيه</span>
+            <h2 class="heading-text-1">
+              <!-- تصميم و تطوير المواقع الالكترونيه -->
+              <span class="primary">تصميم و تطوير المواقع الالكترونيه</span>
             </h2>
           </div>
         </div>
@@ -166,7 +174,10 @@
           </div>
           <div class="hedding-section">
             <h2 class="">
-              <span class="primary">تصميم & تطوير التطبيقات</span>
+              <span class="primary"
+                >تصميم و تطوير <br />
+                التطبيقات</span
+              >
             </h2>
           </div>
         </div>
@@ -178,7 +189,6 @@
           <div class="hedding-section">
             <h2 class="">
               <span class="primary">التسويق الالكترونى</span>
-              <span class="primary"></span>
             </h2>
           </div>
         </div>
@@ -189,7 +199,7 @@
           </div>
           <div class="hedding-section">
             <h2 class="">
-              <span class="primary">الإعلام & الانتاج</span>
+              <span class="primary">الإعلام و الانتاج</span>
             </h2>
           </div>
         </div>
@@ -200,7 +210,7 @@
           </div>
           <div class="hedding-section">
             <h2 class="primary">
-              <span class="primary">التصميم & العلامه التجاريه</span>
+              <span class="primary">التصميم و العلامه التجاريه</span>
             </h2>
           </div>
         </div>
@@ -435,7 +445,7 @@
     <div class="section experience">
       <div class="heading">
         <h1>
-          <span class="primary">
+          <span class="primary" style="font-size: 35px">
             استمتع بتطوير منتجات عالمية المستوى بأسلوب سريع ومتجدد مع كاسيل
           </span>
         </h1>
@@ -662,7 +672,7 @@
               <i class="fa-solid fa-globe contact-icon"></i>
             </li>
             <li>
-              <span>kasselsoft@kasselsoft.com</span>
+              <span>info@kasselsoft.com</span>
               <i class="fa-solid fa-envelope contact-icon"></i>
             </li>
             <li>

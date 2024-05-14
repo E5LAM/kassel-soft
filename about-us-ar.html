@@ -31,7 +31,7 @@
   </head>
   <body class="cairo-uniquifier">
     <div class="section" id="top">
-      <div class="navbar">
+      <div class="navbar" dir="rtl">
         <div class="animation-box">
           <div class="nav-logo">
             <a href="index-ar.html">كاسل</a>
@@ -57,7 +57,14 @@
           </span>
         </nav>
 
-        <div class="language-button dropdown">
+        <div class="language-button">
+          <select name="" id="select" onchange="redirectToPage()">
+            <option value="about-us.html">eng</option>
+            <option value="about-us-ar.html" selected>arb</option>
+          </select>
+        </div>
+
+        <div class="language-btn dropdown">
           <button onclick="toggleDropdown()" class="dropbtn" id="languageBtn">
             <i class="fa-solid fa-globe"></i>
             <span id="languageText">EN</span>
@@ -222,10 +229,7 @@
 
         <div class="product-box">
           <img src="img/Tour & Travels.png" alt="" />
-          <h3 class="">
-            <span class="primary">السياحه &</span>
-            <span class="primary">السفر</span>
-          </h3>
+          <h3 class="primary">السياحه والسفر</h3>
         </div>
 
         <div class="product-box">
@@ -336,7 +340,7 @@
           <p>تواصل معنا</p>
           <ul>
             <li>
-              <span>http://www.kasselsoft.com</span>
+              <span>info@kasselsoft.com</span>
               <i class="fa-solid fa-globe contact-icon"></i>
             </li>
             <li>

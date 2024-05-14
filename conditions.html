@@ -49,7 +49,14 @@
           </span>
         </nav>
 
-        <div class="language-button dropdown" onclick="toggleDropdown()">
+        <div class="language-button">
+          <select name="" id="select" onchange="redirectToPage()">
+            <option value="conditions.html" selected>eng</option>
+            <option value="conditionsAr.html">arb</option>
+          </select>
+        </div>
+
+        <div class="language-btn dropdown" onclick="toggleDropdown()">
           <button class="dropbtn" id="languageBtn">
             <i class="fa-solid fa-globe"></i>
             <span id="languageText">EN</span>
@@ -498,7 +505,7 @@
 
           <div class="location-item">
             <i class="fa-solid fa-envelope"></i>
-            <p>kasselsoft@kasselsoft.com</p>
+            <p>info@kasselsoft.com</p>
           </div>
 
           <div class="location-item">

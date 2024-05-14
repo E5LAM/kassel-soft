@@ -48,7 +48,14 @@
           </span>
         </nav>
 
-        <div class="language-button dropdown" onclick="toggleDropdown()">
+        <div class="language-button">
+          <select name="" id="select" onchange="redirectToPage()">
+            <option value="index.html" selected>eng</option>
+            <option value="index-ar.html">arb</option>
+          </select>
+        </div>
+
+        <div class="language-btn dropdown" onclick="toggleDropdown()">
           <button class="dropbtn" id="languageBtn">
             <i class="fa-solid fa-globe"></i>
             <span id="languageText">EN</span>
@@ -250,11 +257,12 @@
     <div class="section why-us">
       <div class="heading">
         <h5>reasons to choose us</h5>
-        <h1 class="">
-          <span class="primary">Experience the</span>
-          <span class="primary">difference with</span>
+        <h1 class="primary">
+          Experience the difference with our IT solutions.
+          <!-- <span class="primary">Experience the</span> -->
+          <!-- <span class="primary">difference with</span>
           <span class="primary">our </span>
-          <span class="primary">IT solutions.</span>
+          <span class="primary">IT solutions.</span> -->
         </h1>
       </div>
       <div class="why-us-container">
@@ -719,7 +727,7 @@
 
           <div class="location-item">
             <i class="fa-solid fa-envelope"></i>
-            <p>kasselsoft@kasselsoft.com</p>
+            <p>info@kasselsoft.com</p>
           </div>
 
           <div class="location-item">

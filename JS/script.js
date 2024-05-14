@@ -41,6 +41,16 @@ var cursor2 = document.querySelector(".cursor2");
 // });
 
 //////// TRANSLATE ///////////////
+function redirectToPage() {
+  var selectElement = document.getElementById("select");
+  var selectedOption = selectElement.options[selectElement.selectedIndex];
+  var selectedPage = selectedOption.value;
+
+  if (selectedPage !== "") {
+    window.location.href = selectedPage;
+  }
+}
+
 function toggleDropdown() {
   let dropdownContent = document.getElementById("myDropdown");
   dropdownContent.classList.toggle("show");
@@ -49,9 +59,9 @@ function toggleDropdown() {
 function changeLanguage(language) {
   let languageBtn = document.getElementById("languageBtn");
   if (language === "ENG") {
-    languageBtn.innerHTML = `<i class="fa-solid fa-globe"></i> ENG <i class="fa-solid fa-caret-down arrow-down"></i>`;
+    languageBtn.innerHTML = `<i class="fa-solid fa-globe"></i> ENG`;
   } else if (language === "ARB") {
-    languageBtn.innerHTML = `<i class="fa-solid fa-globe"></i> ARB <i class="fa-solid fa-caret-down arrow-down"></i>`;
+    languageBtn.innerHTML = `<i class="fa-solid fa-globe"></i> ARB`;
   }
   localStorage.setItem("selectedLanguage", language);
 
