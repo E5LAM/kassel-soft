@@ -646,3 +646,11 @@ nav span:not(:first-child) {
 .item-box .box {
   height: 125px;
 }
+
+h1 span {
+  font-size: 3rem;
+}
+
+.section:nth-child(1) .container .content .check-text .item {
+  margin-bottom: 0.8rem;
+}
